@@ -98,5 +98,45 @@ namespace Todo.Api.Tests
             Assert.Equal(50, result.TotalPages);
             Assert.Equal(5, result.Items.Count);
         }
+
+        [Fact]
+        public async Task GetById_ReturnsOk_WithFullDetails_WhenItemExists()
+        {
+            // Arrange — create a known item so we have a predictable ID
+            var createRequest = new CreateTodoRequest
+            {
+                Title = "Integration test item",
+                Description = "Full detail check",
+                DueDate = new DateOnly(2027, 1, 15)
+            };
+            var createResponse = await _client.PostAsJsonAsync("/todos", createRequest);
+            var created = await createResponse.Content.ReadFromJsonAsync<Core.Entities.Todo>();
+            Assert.NotNull(created);
+
+            // Act
+            var response = await _client.GetAsync($"/todos/{created.Id}");
+
+            // Assert
+            Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+
+            var detail = await response.Content.ReadFromJsonAsync<TodoDetailDTO>();
+            Assert.NotNull(detail);
+            Assert.Equal(created.Id, detail.Id);
+            Assert.Equal(createRequest.Title, detail.Title);
+            Assert.Equal(createRequest.Description, detail.Description);
+            Assert.Equal(createRequest.DueDate, detail.DueDate);
+            Assert.False(detail.IsCompleted);
+            Assert.NotEqual(default, detail.createdAt);
+        }
+
+        [Fact]
+        public async Task GetById_ReturnsNotFound_WhenItemDoesNotExist()
+        {
+            // Act
+            var response = await _client.GetAsync("/todos/999999"); //we could get list and add one to it but not needd for simple test
+
+            // Assert
+            Assert.Equal(HttpStatusCode.NotFound, response.StatusCode);
+        }
     }
 }

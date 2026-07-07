@@ -25,6 +25,16 @@ namespace Todo.Api.Controllers
             return Ok(result);
         }
 
+        [HttpGet("{id:int}")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            var todo = await _todoService.GetByIdAsync(id);
+            if (todo is null)
+                return NotFound();
+
+            return Ok(todo);
+        }
+
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CreateTodoRequest request)
         {

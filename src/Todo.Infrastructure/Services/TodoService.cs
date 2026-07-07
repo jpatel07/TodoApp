@@ -57,5 +57,21 @@ namespace Todo.Infrastructure.Services
                 TotalPages = (int)Math.Ceiling(totalCount / (double)pageSize)
             };
         }
+
+        public async Task<TodoDetailDTO?> GetByIdAsync(int id)
+        {
+            return await _context.Todo
+                .Where(t => t.Id == id)
+                .Select(t => new TodoDetailDTO
+                {
+                    Id = t.Id,
+                    Title = t.Title,
+                    Description = t.Details,
+                    IsCompleted = t.IsCompleted,
+                    DueDate = t.DueDate,
+                    createdAt = t.DateCreated
+                })
+                .FirstOrDefaultAsync();
+        }
     }
 }
