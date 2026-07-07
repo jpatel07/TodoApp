@@ -52,7 +52,10 @@ namespace Todo.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Todo");
+                    b.ToTable("Todo", t =>
+                        {
+                            t.HasCheckConstraint("CK_Todo_Title_NotEmpty", "LEN(TRIM([Title])) > 0");
+                        });
                 });
 #pragma warning restore 612, 618
         }

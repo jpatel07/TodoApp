@@ -26,6 +26,7 @@ namespace Todo.Infrastructure.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Todo", x => x.Id);
+                    table.CheckConstraint("CK_Todo_Title_NotEmpty", "LEN(TRIM([Title])) > 0");
                 });
         }
 

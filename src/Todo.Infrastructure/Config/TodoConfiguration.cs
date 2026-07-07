@@ -15,6 +15,10 @@ namespace Todo.Infrastructure.Config
             builder.Property(x => x.Title)
                 .HasMaxLength(255);
 
+            // reject empty / whitespace-only titles at the database level
+            builder.ToTable(t =>
+                t.HasCheckConstraint("CK_Todo_Title_NotEmpty", "LEN(TRIM([Title])) > 0"));
+
             //best to keep string length nvarchar 4000 or varchar 8000
             builder.Property(x => x.Details)
                 .HasMaxLength(4000);

@@ -32,6 +32,19 @@ namespace Todo.Api.Tests
             await TodoContextSeed.SeedAsync(db);
         }
 
+        private async Task<Core.Entities.Todo> CreateSeedItemAsync(string title, string? description = null, DateOnly? dueDate = null)
+        {
+            var response = await _client.PostAsJsonAsync("/todos", new CreateTodoRequest
+            {
+                Title = title,
+                Description = description,
+                DueDate = dueDate
+            });
+            response.EnsureSuccessStatusCode();
+            var created = await response.Content.ReadFromJsonAsync<Core.Entities.Todo>();
+            return created!;
+        }
+
         [Fact]
         public async Task Create_ReturnsCreated_WithValidRequest()
         {
@@ -190,6 +203,34 @@ namespace Todo.Api.Tests
 
             // Assert
             Assert.Equal(HttpStatusCode.NotFound, response.StatusCode);
+        }
+
+        [Fact]
+        public async Task Create_ReturnsBadRequest_WhenTitleIsEmpty()
+        {
+            // Arrange
+            var request = new { Title = "", Description = "some desc" };
+
+            // Act — currently returns 201 (bug), should return 400
+            var response = await _client.PostAsJsonAsync("/todos", request);
+
+            // Assert
+            Assert.Equal(HttpStatusCode.BadRequest, response.StatusCode);
+        }
+
+        [Fact]
+        public async Task Update_ReturnsBadRequest_WhenTitleIsEmpty()
+        {
+            // Arrange — need a real item to target
+            var created = await CreateSeedItemAsync("Valid title");
+
+            var updateRequest = new { Title = "", Description = "some desc" };
+
+            // Act — currently returns 200 (bug), should return 400
+            var response = await _client.PutAsJsonAsync($"/todos/{created.Id}", updateRequest);
+
+            // Assert
+            Assert.Equal(HttpStatusCode.BadRequest, response.StatusCode);
         }
     }
 }
