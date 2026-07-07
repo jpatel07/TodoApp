@@ -1,4 +1,6 @@
+using Microsoft.EntityFrameworkCore;
 using Todo.Core.Interfaces;
+using Todo.Core.Models;
 using Todo.Infrastructure.Data;
 
 namespace Todo.Infrastructure.Services
@@ -26,6 +28,34 @@ namespace Todo.Infrastructure.Services
             await _context.SaveChangesAsync();
 
             return todo;
+        }
+
+        public async Task<PagedResult<TodoDTO>> GetPagedAsync(int pageNumber, int pageSize)
+        {
+            var totalCount = await _context.Todo.CountAsync();
+
+            var items = await _context.Todo
+                .OrderBy(t => t.DueDate)
+                .ThenBy(t => t.Id)
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
+                .Select(t => new TodoDTO
+                {
+                    Id = t.Id,
+                    Title = t.Title,
+                    DueDate = t.DueDate,
+                    IsCompleted = t.IsCompleted
+                })
+                .ToListAsync();
+
+            return new PagedResult<TodoDTO>
+            {
+                Items = items,
+                PageNumber = pageNumber,
+                PageSize = pageSize,
+                TotalCount = totalCount,
+                TotalPages = (int)Math.Ceiling(totalCount / (double)pageSize)
+            };
         }
     }
 }

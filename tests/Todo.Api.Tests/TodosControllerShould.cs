@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using System.Net;
 using System.Net.Http.Json;
 using Todo.Api.Models;
+using Todo.Core.Models;
 using Todo.Infrastructure.Data;
 
 namespace Todo.Api.Tests
@@ -55,6 +56,47 @@ namespace Todo.Api.Tests
             Assert.Equal(request.Description, created.Details);
             Assert.Equal(request.DueDate, created.DueDate);
             Assert.False(created.IsCompleted);
+        }
+
+        [Fact]
+        public async Task GetAll_ReturnsOk_WithDefaultPagination()
+        {
+            // Act
+            var response = await _client.GetAsync("/todos");
+
+            // Assert
+            Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+
+            var result = await response.Content.ReadFromJsonAsync<PagedResult<TodoDTO>>();
+            Assert.NotNull(result);
+            Assert.Equal(1, result.PageNumber);
+            Assert.Equal(10, result.PageSize);
+            Assert.Equal(250, result.TotalCount);
+            Assert.Equal(25, result.TotalPages);
+            Assert.Equal(10, result.Items.Count);
+            Assert.All(result.Items, item =>
+            {
+                Assert.True(item.Id > 0);
+                Assert.False(string.IsNullOrWhiteSpace(item.Title));
+            });
+        }
+
+        [Fact]
+        public async Task GetAll_ReturnsCorrectPage_WhenPageParametersSpecified()
+        {
+            // Act
+            var response = await _client.GetAsync("/todos?pageNumber=2&pageSize=5");
+
+            // Assert
+            Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+
+            var result = await response.Content.ReadFromJsonAsync<PagedResult<TodoDTO>>();
+            Assert.NotNull(result);
+            Assert.Equal(2, result.PageNumber);
+            Assert.Equal(5, result.PageSize);
+            Assert.Equal(250, result.TotalCount);
+            Assert.Equal(50, result.TotalPages);
+            Assert.Equal(5, result.Items.Count);
         }
     }
 }

@@ -15,6 +15,16 @@ namespace Todo.Api.Controllers
             _todoService = todoService;
         }
 
+        [HttpGet]
+        public async Task<IActionResult> GetAll([FromQuery] int pageNumber = 1, [FromQuery] int pageSize = 10)
+        {
+            if (pageNumber < 1 || pageSize < 1)
+                return BadRequest("pageNumber and pageSize must be greater than 0.");
+
+            var result = await _todoService.GetPagedAsync(pageNumber, pageSize);
+            return Ok(result);
+        }
+
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CreateTodoRequest request)
         {

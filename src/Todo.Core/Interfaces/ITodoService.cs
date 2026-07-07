@@ -1,7 +1,10 @@
+using Todo.Core.Models;
+
 namespace Todo.Core.Interfaces
 {
     public interface ITodoService
     {
         Task<Entities.Todo> CreateAsync(string title, string? details, DateOnly? dueDate);
+        Task<PagedResult<TodoDTO>> GetPagedAsync(int pageNumber, int pageSize);
     }
 }
