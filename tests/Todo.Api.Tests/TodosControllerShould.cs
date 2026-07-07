@@ -138,5 +138,58 @@ namespace Todo.Api.Tests
             // Assert
             Assert.Equal(HttpStatusCode.NotFound, response.StatusCode);
         }
+
+        [Fact]
+        public async Task Update_ReturnsOk_WithUpdatedDetails_WhenItemExists()
+        {
+            // Arrange — create an item to update
+            var createRequest = new CreateTodoRequest
+            {
+                Title = "Original title",
+                Description = "Original description",
+                DueDate = new DateOnly(2027, 3, 1)
+            };
+            var createResponse = await _client.PostAsJsonAsync("/todos", createRequest);
+            var created = await createResponse.Content.ReadFromJsonAsync<Core.Entities.Todo>();
+            Assert.NotNull(created);
+
+            var updateRequest = new UpdateTodoRequest
+            {
+                Title = "Updated title",
+                Description = "Updated description",
+                DueDate = new DateOnly(2027, 6, 30)
+            };
+
+            // Act
+            var response = await _client.PutAsJsonAsync($"/todos/{created.Id}", updateRequest);
+
+            // Assert
+            Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+
+            var updated = await response.Content.ReadFromJsonAsync<TodoDetailDTO>();
+            Assert.NotNull(updated);
+            Assert.Equal(created.Id, updated.Id);
+            Assert.Equal(updateRequest.Title, updated.Title);
+            Assert.Equal(updateRequest.Description, updated.Description);
+            Assert.Equal(updateRequest.DueDate, updated.DueDate);
+        }
+
+        [Fact]
+        public async Task Update_ReturnsNotFound_WhenItemDoesNotExist()
+        {
+            // Arrange
+            var updateRequest = new UpdateTodoRequest
+            {
+                Title = "Does not matter",
+                Description = null,
+                DueDate = null
+            };
+
+            // Act
+            var response = await _client.PutAsJsonAsync("/todos/999999", updateRequest);
+
+            // Assert
+            Assert.Equal(HttpStatusCode.NotFound, response.StatusCode);
+        }
     }
 }

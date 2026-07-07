@@ -73,5 +73,28 @@ namespace Todo.Infrastructure.Services
                 })
                 .FirstOrDefaultAsync();
         }
+
+        public async Task<TodoDetailDTO?> UpdateAsync(int id, string title, string? description, DateOnly? dueDate)
+        {
+            var todo = await _context.Todo.FindAsync(id);
+            if (todo is null)
+                return null;
+
+            todo.Title = title;
+            todo.Details = description;
+            todo.DueDate = dueDate;
+
+            await _context.SaveChangesAsync();
+
+            return new TodoDetailDTO
+            {
+                Id = todo.Id,
+                Title = todo.Title,
+                Description = todo.Details,
+                IsCompleted = todo.IsCompleted,
+                DueDate = todo.DueDate,
+                createdAt = todo.DateCreated
+            };
+        }
     }
 }

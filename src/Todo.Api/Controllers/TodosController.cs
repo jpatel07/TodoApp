@@ -35,6 +35,16 @@ namespace Todo.Api.Controllers
             return Ok(todo);
         }
 
+        [HttpPut("{id:int}")]
+        public async Task<IActionResult> Update(int id, [FromBody] UpdateTodoRequest request)
+        {
+            var updated = await _todoService.UpdateAsync(id, request.Title, request.Description, request.DueDate);
+            if (updated is null)
+                return NotFound();
+
+            return Ok(updated);
+        }
+
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CreateTodoRequest request)
         {
