@@ -1,6 +1,8 @@
 
 using Microsoft.EntityFrameworkCore;
+using Todo.Core.Interfaces;
 using Todo.Infrastructure.Data;
+using Todo.Infrastructure.Services;
 
 namespace Todo.Api
 {
@@ -19,7 +21,9 @@ namespace Todo.Api
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
 
-            // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+            builder.Services.AddScoped<ITodoService, TodoService>();
+
+            // Learn more about configuring OpenAPI
             builder.Services.AddOpenApi();
 
             var app = builder.Build();

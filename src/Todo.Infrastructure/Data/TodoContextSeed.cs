@@ -1,37 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Reflection;
 using System.Text.Json;
-using Todo.Core.Entities;
+
 namespace Todo.Infrastructure.Data
 {
     public class TodoContextSeed
     {
-        private const string seedJsonFile = "../Todo.Infrastructure/Data/SeedData/todos.json";
+        private const string seedResourceName = "Todo.Infrastructure.Data.SeedData.todos.json";
 
         public static async Task SeedAsync(TodoContext context)
         {
             if (!context.Todo.Any())
             {
-                if (!File.Exists(seedJsonFile))
-                {
-                    throw new FileNotFoundException(seedJsonFile);
-                }
+                var assembly = Assembly.GetExecutingAssembly();
+                await using var stream = assembly.GetManifestResourceStream(seedResourceName)
+                    ?? throw new FileNotFoundException($"Embedded resource '{seedResourceName}' not found.");
 
-                var todoData = await File.ReadAllTextAsync(seedJsonFile);
-
-                var todos = JsonSerializer.Deserialize<List<Core.Entities.Todo>>(
-                                todoData,
-                                new JsonSerializerOptions { PropertyNameCaseInsensitive = true }
+                var todos = await JsonSerializer.DeserializeAsync<List<Core.Entities.Todo>>(
+                    stream,
+                    new JsonSerializerOptions { PropertyNameCaseInsensitive = true }
                 );
 
                 if (todos is null || !todos.Any())
                 {
-                    throw new Exception("Failed to seed no todos found");
+                    throw new Exception("Failed to seed: no todos found.");
                 }
+
                 context.Todo.AddRange(todos);
                 await context.SaveChangesAsync();
-
             }
         }
     }

@@ -14,4 +14,8 @@
     <ProjectReference Include="..\Todo.Core\Todo.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <EmbeddedResource Include="Data\SeedData\todos.json" />
+  </ItemGroup>
+
 </Project>

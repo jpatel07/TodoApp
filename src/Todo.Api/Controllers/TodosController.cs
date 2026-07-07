@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Todo.Api.Models;
-using Todo.Core.Entities;
-using Todo.Infrastructure.Data;
+using Todo.Core.Interfaces;
 
 namespace Todo.Api.Controllers
 {
@@ -9,26 +8,17 @@ namespace Todo.Api.Controllers
     [Route("[controller]")]
     public class TodosController : ControllerBase
     {
-        private readonly TodoContext _context;
+        private readonly ITodoService _todoService;
 
-        public TodosController(TodoContext context)
+        public TodosController(ITodoService todoService)
         {
-            _context = context;
+            _todoService = todoService;
         }
 
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CreateTodoRequest request)
         {
-            var todoItem = new Core.Entities.Todo
-            {
-                Title = request.Title,
-                Details = request.Description,
-                DueDate = request.DueDate,
-                IsCompleted = false
-            };
-
-            _context.Todo.Add(todoItem);
-            await _context.SaveChangesAsync();
+            var todoItem = await _todoService.CreateAsync(request.Title, request.Description, request.DueDate);
 
             return CreatedAtAction(nameof(Create), new { id = todoItem.Id }, todoItem);
         }
