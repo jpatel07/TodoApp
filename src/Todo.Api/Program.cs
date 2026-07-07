@@ -6,7 +6,7 @@ namespace Todo.Api
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
@@ -36,6 +36,22 @@ namespace Todo.Api
 
 
             app.MapControllers();
+
+            try
+            {
+                using var scope = app.Services.CreateScope();
+                var services = scope.ServiceProvider;
+                var context = services.GetRequiredService<TodoContext>();
+                await context.Database.MigrateAsync(); //create db if doesn't exist
+                await TodoContextSeed.SeedAsync(context);
+
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine(ex);
+                throw;
+            }
 
             app.Run();
         }

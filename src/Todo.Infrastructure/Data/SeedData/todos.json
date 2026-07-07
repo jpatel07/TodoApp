@@ -1,0 +1,1752 @@
+[
+  {
+    "title": "Book flight tickets #1",
+    "details": "High priority, needs attention soon.",
+    "isCompleted": true,
+    "dueDate": "2026-07-01",
+    "dateCreated": "2026-05-06T13:13:02.473Z"
+  },
+  {
+    "title": "Network with colleagues #2",
+    "details": "Requires approval from manager first.",
+    "isCompleted": false,
+    "dueDate": "2026-08-02",
+    "dateCreated": "2026-06-29T14:53:11.474Z"
+  },
+  {
+    "title": "Send follow-up email after interview",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-02-23",
+    "dateCreated": "2026-01-09T03:01:24.474Z"
+  },
+  {
+    "title": "Finish project report",
+    "details": "Coordinate with team before starting.",
+    "isCompleted": false,
+    "dueDate": "2026-01-07",
+    "dateCreated": "2026-01-10T05:54:34.474Z"
+  },
+  {
+    "title": "Follow up with client #5",
+    "details": "Requires approval from manager first.",
+    "isCompleted": true,
+    "dueDate": "2026-08-25",
+    "dateCreated": "2026-06-13T05:46:29.474Z"
+  },
+  {
+    "title": "Descale coffee maker",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-05-21",
+    "dateCreated": "2026-04-01T22:11:54.474Z"
+  },
+  {
+    "title": "Onboard new team member",
+    "details": null,
+    "isCompleted": false,
+    "dueDate": "2026-05-31",
+    "dateCreated": "2026-06-20T10:00:00.474Z"
+  },
+  {
+    "title": "Buy birthday gift",
+    "details": "Double check budget before committing.",
+    "isCompleted": true,
+    "dueDate": "2026-01-22",
+    "dateCreated": "2026-01-26T12:22:32.474Z"
+  },
+  {
+    "title": "Refactor login module",
+    "details": "Coordinate with team before starting.",
+    "isCompleted": false,
+    "dueDate": "2026-02-25",
+    "dateCreated": "2026-02-21T12:20:54.474Z"
+  },
+  {
+    "title": "Prepare for interview",
+    "details": "Low priority, can be done anytime.",
+    "isCompleted": true,
+    "dueDate": "2026-03-06",
+    "dateCreated": "2025-12-23T09:57:30.474Z"
+  },
+  {
+    "title": "Shovel snow from driveway #11",
+    "details": null,
+    "isCompleted": false,
+    "dueDate": "2026-03-04",
+    "dateCreated": "2026-02-12T10:33:22.474Z"
+  },
+  {
+    "title": "Descale coffee maker #12",
+    "details": "Coordinate with team before starting.",
+    "isCompleted": true,
+    "dueDate": "2026-06-17",
+    "dateCreated": "2026-05-04T22:40:27.474Z"
+  },
+  {
+    "title": "Audit security settings",
+    "details": "Coordinate with team before starting.",
+    "isCompleted": true,
+    "dueDate": "2026-05-18",
+    "dateCreated": "2026-02-27T14:59:16.474Z"
+  },
+  {
+    "title": "Configure VPN",
+    "details": "Requires approval from manager first.",
+    "isCompleted": true,
+    "dueDate": "2026-03-06",
+    "dateCreated": "2026-02-05T04:17:19.474Z"
+  },
+  {
+    "title": "Apply for new job",
+    "details": "Need to check the details before proceeding.",
+    "isCompleted": true,
+    "dueDate": "2026-03-22",
+    "dateCreated": "2026-01-13T22:44:50.474Z"
+  },
+  {
+    "title": "Book flight tickets",
+    "details": "Coordinate with team before starting.",
+    "isCompleted": true,
+    "dueDate": "2026-05-19",
+    "dateCreated": "2026-03-13T08:42:29.474Z"
+  },
+  {
+    "title": "Renew passport",
+    "details": "High priority, needs attention soon.",
+    "isCompleted": false,
+    "dueDate": "2026-02-10",
+    "dateCreated": "2026-01-24T20:07:33.474Z"
+  },
+  {
+    "title": "Prepare conference talk",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-01-24",
+    "dateCreated": "2026-02-21T20:29:27.474Z"
+  },
+  {
+    "title": "Onboard new team member",
+    "details": null,
+    "isCompleted": false,
+    "dueDate": "2026-06-01",
+    "dateCreated": "2026-04-20T16:11:19.474Z"
+  },
+  {
+    "title": "Deploy staging environment",
+    "details": null,
+    "isCompleted": false,
+    "dueDate": null,
+    "dateCreated": "2026-06-20T13:43:08.474Z"
+  },
+  {
+    "title": "Update LinkedIn profile",
+    "details": "Ask for help if stuck.",
+    "isCompleted": true,
+    "dueDate": "2026-04-09",
+    "dateCreated": "2026-02-02T10:35:11.474Z"
+  },
+  {
+    "title": "Practice guitar",
+    "details": "Requires approval from manager first.",
+    "isCompleted": true,
+    "dueDate": "2026-02-22",
+    "dateCreated": "2026-01-17T04:42:07.474Z"
+  },
+  {
+    "title": "Clean the kitchen",
+    "details": "Low priority, can be done anytime.",
+    "isCompleted": true,
+    "dueDate": "2026-06-29",
+    "dateCreated": "2026-07-01T22:07:48.474Z"
+  },
+  {
+    "title": "Walk the dog",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-07-04",
+    "dateCreated": "2026-06-29T15:43:04.474Z"
+  },
+  {
+    "title": "Watch documentary",
+    "details": null,
+    "isCompleted": false,
+    "dueDate": "2026-03-13",
+    "dateCreated": "2026-02-11T01:05:18.474Z"
+  },
+  {
+    "title": "Drop off packages at post office #26",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-06-07",
+    "dateCreated": "2026-03-19T02:52:32.474Z"
+  },
+  {
+    "title": "Buy birthday gift #27",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-05-20",
+    "dateCreated": "2026-04-12T09:14:40.474Z"
+  },
+  {
+    "title": "Plan family reunion",
+    "details": "Double check budget before committing.",
+    "isCompleted": false,
+    "dueDate": "2026-07-23",
+    "dateCreated": "2026-05-05T02:09:49.474Z"
+  },
+  {
+    "title": "Submit tax documents",
+    "details": "Ask for help if stuck.",
+    "isCompleted": false,
+    "dueDate": "2026-08-05",
+    "dateCreated": "2026-07-04T09:41:29.474Z"
+  },
+  {
+    "title": "Audit security settings",
+    "details": "Coordinate with team before starting.",
+    "isCompleted": false,
+    "dueDate": "2026-06-10",
+    "dateCreated": "2026-04-01T04:04:58.474Z"
+  },
+  {
+    "title": "Replace air filter",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2025-12-26",
+    "dateCreated": "2025-12-19T00:34:43.474Z"
+  },
+  {
+    "title": "Water the plants",
+    "details": "Ask for help if stuck.",
+    "isCompleted": false,
+    "dueDate": null,
+    "dateCreated": "2026-06-22T16:12:59.474Z"
+  },
+  {
+    "title": "Attend webinar",
+    "details": "Ask for help if stuck.",
+    "isCompleted": false,
+    "dueDate": "2026-08-12",
+    "dateCreated": "2026-06-17T15:48:10.474Z"
+  },
+  {
+    "title": "Change passwords #34",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-04-01",
+    "dateCreated": "2026-02-11T21:13:11.474Z"
+  },
+  {
+    "title": "Negotiate salary offer",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-05-22",
+    "dateCreated": "2026-05-02T06:51:31.474Z"
+  },
+  {
+    "title": "Donate old clothes",
+    "details": null,
+    "isCompleted": false,
+    "dueDate": "2026-02-07",
+    "dateCreated": "2025-12-27T17:57:31.474Z"
+  },
+  {
+    "title": "Refactor login module",
+    "details": "Ask for help if stuck.",
+    "isCompleted": false,
+    "dueDate": "2026-07-22",
+    "dateCreated": "2026-05-01T05:35:26.474Z"
+  },
+  {
+    "title": "Service the air conditioner",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-05-01",
+    "dateCreated": "2026-02-17T20:01:38.474Z"
+  },
+  {
+    "title": "Call plumber",
+    "details": "Ask for help if stuck.",
+    "isCompleted": true,
+    "dueDate": "2026-07-14",
+    "dateCreated": "2026-04-22T13:24:30.474Z"
+  },
+  {
+    "title": "Apply for new job",
+    "details": "High priority, needs attention soon.",
+    "isCompleted": false,
+    "dueDate": "2026-03-26",
+    "dateCreated": "2026-02-03T05:48:49.474Z"
+  },
+  {
+    "title": "Journal before bed",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-06-28",
+    "dateCreated": "2026-06-23T19:12:15.474Z"
+  },
+  {
+    "title": "Draft client proposal",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-05-25",
+    "dateCreated": "2026-05-01T02:12:39.474Z"
+  },
+  {
+    "title": "Book flight tickets #43",
+    "details": null,
+    "isCompleted": false,
+    "dueDate": null,
+    "dateCreated": "2026-01-11T22:26:00.474Z"
+  },
+  {
+    "title": "Apply for new job #44",
+    "details": "Coordinate with team before starting.",
+    "isCompleted": false,
+    "dueDate": "2026-09-06",
+    "dateCreated": "2026-06-27T05:01:16.474Z"
+  },
+  {
+    "title": "Plan weekend trip",
+    "details": "This is a recurring task, do not forget.",
+    "isCompleted": false,
+    "dueDate": "2026-02-24",
+    "dateCreated": "2026-01-14T14:33:18.474Z"
+  },
+  {
+    "title": "Set up two-factor authentication",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-08-10",
+    "dateCreated": "2026-05-29T12:22:52.474Z"
+  },
+  {
+    "title": "Back up phone photos #47",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-06-22",
+    "dateCreated": "2026-04-13T09:15:44.475Z"
+  },
+  {
+    "title": "Investigate performance issue",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-04-06",
+    "dateCreated": "2026-03-09T11:01:53.475Z"
+  },
+  {
+    "title": "Update monthly budget spreadsheet",
+    "details": null,
+    "isCompleted": false,
+    "dueDate": "2026-04-27",
+    "dateCreated": "2026-05-19T06:20:46.475Z"
+  },
+  {
+    "title": "Repair bicycle tire",
+    "details": "Ask for help if stuck.",
+    "isCompleted": false,
+    "dueDate": "2026-03-11",
+    "dateCreated": "2026-03-27T06:14:27.475Z"
+  },
+  {
+    "title": "Trim the hedges",
+    "details": "High priority, needs attention soon.",
+    "isCompleted": false,
+    "dueDate": "2026-08-29",
+    "dateCreated": "2026-06-27T20:34:38.475Z"
+  },
+  {
+    "title": "Send holiday cards",
+    "details": "Ask for help if stuck.",
+    "isCompleted": true,
+    "dueDate": "2026-05-13",
+    "dateCreated": "2026-06-07T21:18:17.475Z"
+  },
+  {
+    "title": "Buy groceries",
+    "details": null,
+    "isCompleted": false,
+    "dueDate": "2026-04-16",
+    "dateCreated": "2026-02-20T05:02:12.475Z"
+  },
+  {
+    "title": "Harvest tomatoes",
+    "details": "Remember to bring necessary documents.",
+    "isCompleted": true,
+    "dueDate": "2026-01-25",
+    "dateCreated": "2026-01-03T23:50:02.475Z"
+  },
+  {
+    "title": "Organize bookshelf",
+    "details": "This is a recurring task, do not forget.",
+    "isCompleted": true,
+    "dueDate": "2026-03-30",
+    "dateCreated": "2026-03-22T11:57:41.475Z"
+  },
+  {
+    "title": "Buy groceries",
+    "details": "This is a recurring task, do not forget.",
+    "isCompleted": true,
+    "dueDate": "2026-04-16",
+    "dateCreated": "2026-03-18T20:12:35.475Z"
+  },
+  {
+    "title": "Watch documentary",
+    "details": null,
+    "isCompleted": false,
+    "dueDate": null,
+    "dateCreated": "2025-12-30T18:18:35.475Z"
+  },
+  {
+    "title": "Draft client proposal #58",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-04-26",
+    "dateCreated": "2026-05-08T10:07:07.475Z"
+  },
+  {
+    "title": "Update software license",
+    "details": "Follow up if no response within a week.",
+    "isCompleted": true,
+    "dueDate": "2026-02-11",
+    "dateCreated": "2025-12-23T01:42:59.475Z"
+  },
+  {
+    "title": "Optimize database queries",
+    "details": "This is a recurring task, do not forget.",
+    "isCompleted": false,
+    "dueDate": "2026-08-19",
+    "dateCreated": "2026-05-31T18:05:45.475Z"
+  },
+  {
+    "title": "Renew passport",
+    "details": "This is a recurring task, do not forget.",
+    "isCompleted": true,
+    "dueDate": null,
+    "dateCreated": "2026-05-23T01:23:02.475Z"
+  },
+  {
+    "title": "Meal prep for the week",
+    "details": null,
+    "isCompleted": false,
+    "dueDate": "2026-05-15",
+    "dateCreated": "2026-03-10T21:56:52.475Z"
+  },
+  {
+    "title": "Journal before bed",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-03-19",
+    "dateCreated": "2026-02-17T12:30:10.475Z"
+  },
+  {
+    "title": "Clean the kitchen",
+    "details": "High priority, needs attention soon.",
+    "isCompleted": true,
+    "dueDate": "2025-12-28",
+    "dateCreated": "2025-12-23T00:39:14.475Z"
+  },
+  {
+    "title": "Replace air filter",
+    "details": "Low priority, can be done anytime.",
+    "isCompleted": true,
+    "dueDate": null,
+    "dateCreated": "2026-04-17T15:21:50.475Z"
+  },
+  {
+    "title": "Install software updates",
+    "details": "Remember to bring necessary documents.",
+    "isCompleted": true,
+    "dueDate": "2026-04-15",
+    "dateCreated": "2026-03-23T06:15:02.475Z"
+  },
+  {
+    "title": "Organize garage sale",
+    "details": null,
+    "isCompleted": false,
+    "dueDate": "2026-01-08",
+    "dateCreated": "2026-02-07T21:20:15.475Z"
+  },
+  {
+    "title": "Donate old clothes",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-06-13",
+    "dateCreated": "2026-03-21T22:24:49.475Z"
+  },
+  {
+    "title": "Complete coding challenge",
+    "details": "Double check budget before committing.",
+    "isCompleted": false,
+    "dueDate": "2026-09-10",
+    "dateCreated": "2026-06-30T06:03:34.475Z"
+  },
+  {
+    "title": "Compare insurance quotes",
+    "details": null,
+    "isCompleted": false,
+    "dueDate": null,
+    "dateCreated": "2026-06-04T22:51:03.475Z"
+  },
+  {
+    "title": "Negotiate salary offer",
+    "details": "Remember to bring necessary documents.",
+    "isCompleted": true,
+    "dueDate": "2026-01-17",
+    "dateCreated": "2026-01-24T13:21:25.475Z"
+  },
+  {
+    "title": "Investigate performance issue",
+    "details": "Double check budget before committing.",
+    "isCompleted": true,
+    "dueDate": "2026-06-30",
+    "dateCreated": "2026-04-15T04:29:39.475Z"
+  },
+  {
+    "title": "Backup database",
+    "details": null,
+    "isCompleted": false,
+    "dueDate": "2026-01-28",
+    "dateCreated": "2026-02-19T05:33:21.475Z"
+  },
+  {
+    "title": "Plan weekend trip",
+    "details": "This is a recurring task, do not forget.",
+    "isCompleted": true,
+    "dueDate": "2026-05-02",
+    "dateCreated": "2026-05-16T19:40:32.475Z"
+  },
+  {
+    "title": "Reserve hotel room",
+    "details": "This is a recurring task, do not forget.",
+    "isCompleted": false,
+    "dueDate": "2026-04-26",
+    "dateCreated": "2026-03-10T04:52:00.475Z"
+  },
+  {
+    "title": "Reserve hotel room",
+    "details": "Coordinate with team before starting.",
+    "isCompleted": true,
+    "dueDate": null,
+    "dateCreated": "2026-04-18T21:13:42.475Z"
+  },
+  {
+    "title": "Fix production bug",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-07-06",
+    "dateCreated": "2026-05-17T20:44:24.475Z"
+  },
+  {
+    "title": "Sell unused furniture",
+    "details": "Follow up if no response within a week.",
+    "isCompleted": true,
+    "dueDate": "2026-07-01",
+    "dateCreated": "2026-06-07T16:48:08.475Z"
+  },
+  {
+    "title": "Review pull request",
+    "details": "Low priority, can be done anytime.",
+    "isCompleted": false,
+    "dueDate": null,
+    "dateCreated": "2026-07-04T00:27:00.475Z"
+  },
+  {
+    "title": "Descale coffee maker",
+    "details": "Requires approval from manager first.",
+    "isCompleted": false,
+    "dueDate": "2026-08-03",
+    "dateCreated": "2026-05-22T18:36:55.475Z"
+  },
+  {
+    "title": "Schedule annual physical",
+    "details": null,
+    "isCompleted": false,
+    "dueDate": "2026-01-02",
+    "dateCreated": "2026-01-01T08:31:32.475Z"
+  },
+  {
+    "title": "Write unit tests",
+    "details": "Double check budget before committing.",
+    "isCompleted": true,
+    "dueDate": "2026-05-23",
+    "dateCreated": "2026-05-05T21:33:00.475Z"
+  },
+  {
+    "title": "Start new workout plan",
+    "details": "Coordinate with team before starting.",
+    "isCompleted": true,
+    "dueDate": "2026-03-18",
+    "dateCreated": "2026-03-05T05:22:44.475Z"
+  },
+  {
+    "title": "Paint the fence",
+    "details": "Ask for help if stuck.",
+    "isCompleted": true,
+    "dueDate": "2026-06-21",
+    "dateCreated": "2026-05-20T09:30:36.475Z"
+  },
+  {
+    "title": "Cancel unused subscription",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2025-12-18",
+    "dateCreated": "2026-01-06T01:58:48.475Z"
+  },
+  {
+    "title": "Change passwords",
+    "details": "High priority, needs attention soon.",
+    "isCompleted": true,
+    "dueDate": "2026-02-25",
+    "dateCreated": "2026-01-19T04:51:43.475Z"
+  },
+  {
+    "title": "Update LinkedIn profile",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-02-26",
+    "dateCreated": "2026-03-13T07:08:02.475Z"
+  },
+  {
+    "title": "Harvest tomatoes #88",
+    "details": "Ask for help if stuck.",
+    "isCompleted": true,
+    "dueDate": "2026-01-24",
+    "dateCreated": "2025-12-24T11:19:26.475Z"
+  },
+  {
+    "title": "Review flashcards",
+    "details": "Remember to bring necessary documents.",
+    "isCompleted": true,
+    "dueDate": "2026-05-27",
+    "dateCreated": "2026-05-19T10:00:55.475Z"
+  },
+  {
+    "title": "Register for conference #90",
+    "details": "Need to check the details before proceeding.",
+    "isCompleted": true,
+    "dueDate": "2026-06-10",
+    "dateCreated": "2026-06-24T07:39:41.475Z"
+  },
+  {
+    "title": "Buy vitamins #91",
+    "details": "Need to check the details before proceeding.",
+    "isCompleted": true,
+    "dueDate": "2026-02-24",
+    "dateCreated": "2026-02-11T01:12:27.475Z"
+  },
+  {
+    "title": "Fix leaky faucet",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-02-14",
+    "dateCreated": "2026-03-07T15:55:07.475Z"
+  },
+  {
+    "title": "Fix leaky faucet",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-01-29",
+    "dateCreated": "2026-02-13T15:11:47.475Z"
+  },
+  {
+    "title": "Declutter closet",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-04-25",
+    "dateCreated": "2026-01-29T23:16:17.475Z"
+  },
+  {
+    "title": "Buy anniversary gift",
+    "details": "Follow up if no response within a week.",
+    "isCompleted": true,
+    "dueDate": "2026-06-18",
+    "dateCreated": "2026-06-22T14:41:05.475Z"
+  },
+  {
+    "title": "Rake the leaves",
+    "details": "Coordinate with team before starting.",
+    "isCompleted": true,
+    "dueDate": null,
+    "dateCreated": "2026-05-06T22:12:01.475Z"
+  },
+  {
+    "title": "Clean out fridge",
+    "details": "Double check budget before committing.",
+    "isCompleted": true,
+    "dueDate": "2026-04-30",
+    "dateCreated": "2026-04-24T09:52:11.475Z"
+  },
+  {
+    "title": "Defrost freezer #98",
+    "details": "This is a recurring task, do not forget.",
+    "isCompleted": true,
+    "dueDate": "2026-07-28",
+    "dateCreated": "2026-04-30T20:49:27.475Z"
+  },
+  {
+    "title": "Reserve hotel room",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": null,
+    "dateCreated": "2026-05-30T13:07:08.475Z"
+  },
+  {
+    "title": "Plan garden layout",
+    "details": null,
+    "isCompleted": false,
+    "dueDate": null,
+    "dateCreated": "2026-02-12T02:18:31.475Z"
+  },
+  {
+    "title": "Change passwords",
+    "details": "Ask for help if stuck.",
+    "isCompleted": true,
+    "dueDate": null,
+    "dateCreated": "2026-02-19T02:21:34.475Z"
+  },
+  {
+    "title": "Write thank you cards",
+    "details": "Follow up if no response within a week.",
+    "isCompleted": false,
+    "dueDate": "2026-06-29",
+    "dateCreated": "2026-05-04T14:58:21.475Z"
+  },
+  {
+    "title": "Pay electricity bill",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-04-22",
+    "dateCreated": "2026-04-30T16:49:58.475Z"
+  },
+  {
+    "title": "Decorate for holidays",
+    "details": "Coordinate with team before starting.",
+    "isCompleted": true,
+    "dueDate": "2026-01-19",
+    "dateCreated": "2026-02-07T19:11:09.475Z"
+  },
+  {
+    "title": "Set up two-factor authentication",
+    "details": null,
+    "isCompleted": false,
+    "dueDate": "2026-07-14",
+    "dateCreated": "2026-06-11T06:17:23.475Z"
+  },
+  {
+    "title": "Audit security settings",
+    "details": "Ask for help if stuck.",
+    "isCompleted": true,
+    "dueDate": "2026-07-09",
+    "dateCreated": "2026-06-28T15:05:29.475Z"
+  },
+  {
+    "title": "Change passwords",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-06-12",
+    "dateCreated": "2026-07-06T22:32:33.475Z"
+  },
+  {
+    "title": "Onboard new team member",
+    "details": "Double check budget before committing.",
+    "isCompleted": true,
+    "dueDate": "2026-03-09",
+    "dateCreated": "2026-01-28T16:25:07.475Z"
+  },
+  {
+    "title": "Replace air filter",
+    "details": null,
+    "isCompleted": false,
+    "dueDate": "2026-04-21",
+    "dateCreated": "2026-03-05T17:14:48.475Z"
+  },
+  {
+    "title": "Configure VPN",
+    "details": "Need to check the details before proceeding.",
+    "isCompleted": false,
+    "dueDate": "2026-05-04",
+    "dateCreated": "2026-02-16T14:54:14.475Z"
+  },
+  {
+    "title": "Change bed sheets",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-06-02",
+    "dateCreated": "2026-05-29T07:40:17.475Z"
+  },
+  {
+    "title": "Schedule annual physical",
+    "details": "This is a recurring task, do not forget.",
+    "isCompleted": true,
+    "dueDate": "2026-06-08",
+    "dateCreated": "2026-03-13T13:01:53.475Z"
+  },
+  {
+    "title": "Schedule car maintenance",
+    "details": "High priority, needs attention soon.",
+    "isCompleted": true,
+    "dueDate": "2026-01-25",
+    "dateCreated": "2025-12-22T05:55:23.476Z"
+  },
+  {
+    "title": "Buy groceries",
+    "details": "High priority, needs attention soon.",
+    "isCompleted": true,
+    "dueDate": "2026-03-06",
+    "dateCreated": "2026-02-07T00:28:13.476Z"
+  },
+  {
+    "title": "Reconcile bank statement",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-05-10",
+    "dateCreated": "2026-02-18T01:43:09.476Z"
+  },
+  {
+    "title": "Cancel unused subscription",
+    "details": "This is a recurring task, do not forget.",
+    "isCompleted": true,
+    "dueDate": "2026-01-20",
+    "dateCreated": "2025-12-21T16:42:31.476Z"
+  },
+  {
+    "title": "Investigate performance issue",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-01-08",
+    "dateCreated": "2026-01-22T00:15:48.476Z"
+  },
+  {
+    "title": "Print shipping labels",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-02-15",
+    "dateCreated": "2026-03-16T23:08:54.476Z"
+  },
+  {
+    "title": "Set up two-factor authentication",
+    "details": "Coordinate with team before starting.",
+    "isCompleted": false,
+    "dueDate": "2026-08-15",
+    "dateCreated": "2026-06-18T08:38:54.476Z"
+  },
+  {
+    "title": "Backup database",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-03-07",
+    "dateCreated": "2026-01-16T04:27:43.476Z"
+  },
+  {
+    "title": "Refill prescription",
+    "details": "Need to check the details before proceeding.",
+    "isCompleted": true,
+    "dueDate": "2026-04-27",
+    "dateCreated": "2026-01-30T09:45:00.476Z"
+  },
+  {
+    "title": "Update monthly budget spreadsheet",
+    "details": "Requires approval from manager first.",
+    "isCompleted": false,
+    "dueDate": "2026-08-09",
+    "dateCreated": "2026-06-12T14:38:18.476Z"
+  },
+  {
+    "title": "Write blog post #123",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-06-11",
+    "dateCreated": "2026-06-23T05:14:47.476Z"
+  },
+  {
+    "title": "Back up phone photos",
+    "details": null,
+    "isCompleted": false,
+    "dueDate": null,
+    "dateCreated": "2026-05-22T11:55:25.476Z"
+  },
+  {
+    "title": "Cancel unused subscription",
+    "details": "Follow up if no response within a week.",
+    "isCompleted": true,
+    "dueDate": "2026-06-29",
+    "dateCreated": "2026-06-01T01:30:28.476Z"
+  },
+  {
+    "title": "Call plumber",
+    "details": "Double check budget before committing.",
+    "isCompleted": false,
+    "dueDate": null,
+    "dateCreated": "2026-04-25T12:32:45.476Z"
+  },
+  {
+    "title": "Donate old clothes",
+    "details": "Requires approval from manager first.",
+    "isCompleted": false,
+    "dueDate": "2026-01-07",
+    "dateCreated": "2026-01-12T01:39:53.476Z"
+  },
+  {
+    "title": "Schedule annual physical #128",
+    "details": "Requires approval from manager first.",
+    "isCompleted": true,
+    "dueDate": "2026-04-10",
+    "dateCreated": "2026-02-10T21:22:10.476Z"
+  },
+  {
+    "title": "Update SSL certificate",
+    "details": "Follow up if no response within a week.",
+    "isCompleted": false,
+    "dueDate": "2026-03-29",
+    "dateCreated": "2026-01-12T20:13:09.476Z"
+  },
+  {
+    "title": "Replace air filter",
+    "details": "This is a recurring task, do not forget.",
+    "isCompleted": true,
+    "dueDate": "2026-03-23",
+    "dateCreated": "2026-02-02T10:19:26.476Z"
+  },
+  {
+    "title": "Change car oil",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-02-23",
+    "dateCreated": "2026-01-28T16:51:44.476Z"
+  },
+  {
+    "title": "Write onboarding documentation",
+    "details": "Remember to bring necessary documents.",
+    "isCompleted": false,
+    "dueDate": "2026-04-09",
+    "dateCreated": "2026-04-23T03:10:11.476Z"
+  },
+  {
+    "title": "Write onboarding documentation",
+    "details": null,
+    "isCompleted": false,
+    "dueDate": "2026-07-28",
+    "dateCreated": "2026-04-29T08:56:30.476Z"
+  },
+  {
+    "title": "Organize bookshelf",
+    "details": "Low priority, can be done anytime.",
+    "isCompleted": false,
+    "dueDate": null,
+    "dateCreated": "2026-06-08T15:33:22.476Z"
+  },
+  {
+    "title": "Update SSL certificate",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-01-17",
+    "dateCreated": "2026-02-15T15:00:35.476Z"
+  },
+  {
+    "title": "Meal prep for the week",
+    "details": null,
+    "isCompleted": false,
+    "dueDate": "2026-02-16",
+    "dateCreated": "2025-12-27T21:00:52.476Z"
+  },
+  {
+    "title": "Renew passport",
+    "details": "Double check budget before committing.",
+    "isCompleted": false,
+    "dueDate": "2026-08-17",
+    "dateCreated": "2026-06-30T21:51:27.476Z"
+  },
+  {
+    "title": "Prepare presentation slides",
+    "details": "Double check budget before committing.",
+    "isCompleted": true,
+    "dueDate": "2025-12-26",
+    "dateCreated": "2026-01-08T18:39:34.476Z"
+  },
+  {
+    "title": "Clean the garage",
+    "details": "Double check budget before committing.",
+    "isCompleted": true,
+    "dueDate": "2026-05-26",
+    "dateCreated": "2026-06-08T09:44:56.476Z"
+  },
+  {
+    "title": "Plan sprint retrospective",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-03-14",
+    "dateCreated": "2026-01-10T03:02:16.476Z"
+  },
+  {
+    "title": "Declutter closet",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-03-09",
+    "dateCreated": "2026-03-04T03:26:19.476Z"
+  },
+  {
+    "title": "Plan sprint retrospective",
+    "details": "Double check budget before committing.",
+    "isCompleted": true,
+    "dueDate": "2026-05-25",
+    "dateCreated": "2026-05-08T14:40:49.476Z"
+  },
+  {
+    "title": "Conduct code review #143",
+    "details": "High priority, needs attention soon.",
+    "isCompleted": true,
+    "dueDate": null,
+    "dateCreated": "2026-05-20T01:44:31.476Z"
+  },
+  {
+    "title": "Pay electricity bill #144",
+    "details": "Low priority, can be done anytime.",
+    "isCompleted": false,
+    "dueDate": "2026-07-20",
+    "dateCreated": "2026-05-05T21:44:31.476Z"
+  },
+  {
+    "title": "Try new restaurant",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-06-24",
+    "dateCreated": "2026-05-09T12:55:31.476Z"
+  },
+  {
+    "title": "Archive old files",
+    "details": "Ask for help if stuck.",
+    "isCompleted": true,
+    "dueDate": "2026-04-07",
+    "dateCreated": "2026-05-04T14:17:43.476Z"
+  },
+  {
+    "title": "Conduct code review",
+    "details": "This is a recurring task, do not forget.",
+    "isCompleted": true,
+    "dueDate": "2026-01-14",
+    "dateCreated": "2026-02-07T17:43:23.476Z"
+  },
+  {
+    "title": "Organize garage sale",
+    "details": null,
+    "isCompleted": false,
+    "dueDate": "2026-07-26",
+    "dateCreated": "2026-06-21T01:58:35.476Z"
+  },
+  {
+    "title": "Clean out fridge",
+    "details": "Follow up if no response within a week.",
+    "isCompleted": false,
+    "dueDate": "2026-08-16",
+    "dateCreated": "2026-06-25T23:18:44.476Z"
+  },
+  {
+    "title": "Walk the dog",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-06-21",
+    "dateCreated": "2026-03-27T14:22:01.476Z"
+  },
+  {
+    "title": "Backup database",
+    "details": "Coordinate with team before starting.",
+    "isCompleted": false,
+    "dueDate": "2026-08-04",
+    "dateCreated": "2026-06-21T08:17:05.476Z"
+  },
+  {
+    "title": "Order printer ink",
+    "details": "Follow up if no response within a week.",
+    "isCompleted": true,
+    "dueDate": "2026-03-19",
+    "dateCreated": "2026-02-22T01:46:42.476Z"
+  },
+  {
+    "title": "Reserve hotel room",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-03-16",
+    "dateCreated": "2025-12-23T10:28:08.476Z"
+  },
+  {
+    "title": "Follow up with client",
+    "details": "Requires approval from manager first.",
+    "isCompleted": true,
+    "dueDate": "2026-05-17",
+    "dateCreated": "2026-03-23T06:55:05.476Z"
+  },
+  {
+    "title": "Install software updates",
+    "details": "Double check budget before committing.",
+    "isCompleted": true,
+    "dueDate": null,
+    "dateCreated": "2026-06-20T15:11:23.476Z"
+  },
+  {
+    "title": "Update Jira tickets",
+    "details": "Ask for help if stuck.",
+    "isCompleted": true,
+    "dueDate": "2026-08-15",
+    "dateCreated": "2026-06-21T21:51:03.476Z"
+  },
+  {
+    "title": "Update project roadmap",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-04-05",
+    "dateCreated": "2026-03-21T07:49:31.476Z"
+  },
+  {
+    "title": "Journal before bed",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-04-16",
+    "dateCreated": "2026-03-06T14:21:27.476Z"
+  },
+  {
+    "title": "Repair bicycle tire",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-05-10",
+    "dateCreated": "2026-03-19T19:39:41.476Z"
+  },
+  {
+    "title": "Shovel snow from driveway #160",
+    "details": "High priority, needs attention soon.",
+    "isCompleted": false,
+    "dueDate": "2026-01-02",
+    "dateCreated": "2026-01-09T05:55:30.476Z"
+  },
+  {
+    "title": "Negotiate salary offer",
+    "details": "Remember to bring necessary documents.",
+    "isCompleted": false,
+    "dueDate": null,
+    "dateCreated": "2026-06-01T17:10:53.476Z"
+  },
+  {
+    "title": "Fix production bug",
+    "details": "Low priority, can be done anytime.",
+    "isCompleted": false,
+    "dueDate": "2026-08-05",
+    "dateCreated": "2026-05-28T06:57:05.476Z"
+  },
+  {
+    "title": "Deploy staging environment",
+    "details": "Coordinate with team before starting.",
+    "isCompleted": true,
+    "dueDate": "2026-06-01",
+    "dateCreated": "2026-05-28T16:29:09.476Z"
+  },
+  {
+    "title": "Plan family reunion",
+    "details": "Double check budget before committing.",
+    "isCompleted": true,
+    "dueDate": "2026-03-07",
+    "dateCreated": "2026-03-23T10:26:56.476Z"
+  },
+  {
+    "title": "Book flight tickets",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-01-11",
+    "dateCreated": "2026-02-05T23:06:45.476Z"
+  },
+  {
+    "title": "Water the plants #166",
+    "details": "High priority, needs attention soon.",
+    "isCompleted": true,
+    "dueDate": "2026-04-29",
+    "dateCreated": "2026-05-14T08:59:40.476Z"
+  },
+  {
+    "title": "Write thank you cards",
+    "details": "Requires approval from manager first.",
+    "isCompleted": false,
+    "dueDate": "2026-04-17",
+    "dateCreated": "2026-02-21T00:05:01.476Z"
+  },
+  {
+    "title": "Refactor login module",
+    "details": null,
+    "isCompleted": false,
+    "dueDate": "2026-06-06",
+    "dateCreated": "2026-06-27T17:36:55.476Z"
+  },
+  {
+    "title": "Buy anniversary gift",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": null,
+    "dateCreated": "2026-01-25T07:45:24.476Z"
+  },
+  {
+    "title": "Order printer ink",
+    "details": "Follow up if no response within a week.",
+    "isCompleted": true,
+    "dueDate": "2026-02-23",
+    "dateCreated": "2026-03-12T15:05:20.476Z"
+  },
+  {
+    "title": "Audit security settings",
+    "details": "Requires approval from manager first.",
+    "isCompleted": true,
+    "dueDate": "2026-04-10",
+    "dateCreated": "2026-04-19T10:13:50.476Z"
+  },
+  {
+    "title": "Reserve hotel room",
+    "details": "This is a recurring task, do not forget.",
+    "isCompleted": true,
+    "dueDate": "2026-03-05",
+    "dateCreated": "2025-12-21T05:30:52.476Z"
+  },
+  {
+    "title": "Archive old files",
+    "details": "Coordinate with team before starting.",
+    "isCompleted": false,
+    "dueDate": "2026-07-09",
+    "dateCreated": "2026-05-03T11:58:51.476Z"
+  },
+  {
+    "title": "Set up CI pipeline",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-04-05",
+    "dateCreated": "2026-01-28T01:24:20.476Z"
+  },
+  {
+    "title": "Negotiate salary offer",
+    "details": "Follow up if no response within a week.",
+    "isCompleted": true,
+    "dueDate": "2026-03-25",
+    "dateCreated": "2026-04-16T06:47:15.476Z"
+  },
+  {
+    "title": "Sell unused furniture",
+    "details": "Follow up if no response within a week.",
+    "isCompleted": false,
+    "dueDate": null,
+    "dateCreated": "2026-06-22T23:49:34.476Z"
+  },
+  {
+    "title": "Clean the garage #177",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-07-12",
+    "dateCreated": "2026-04-24T18:49:34.476Z"
+  },
+  {
+    "title": "Journal before bed",
+    "details": "Follow up if no response within a week.",
+    "isCompleted": true,
+    "dueDate": "2026-03-31",
+    "dateCreated": "2026-02-16T01:55:24.476Z"
+  },
+  {
+    "title": "Buy new office chair",
+    "details": "Ask for help if stuck.",
+    "isCompleted": false,
+    "dueDate": null,
+    "dateCreated": "2026-05-30T01:53:41.476Z"
+  },
+  {
+    "title": "Send invoice to customer",
+    "details": "Remember to bring necessary documents.",
+    "isCompleted": false,
+    "dueDate": null,
+    "dateCreated": "2026-02-28T12:00:54.477Z"
+  },
+  {
+    "title": "Wrap presents",
+    "details": "Follow up if no response within a week.",
+    "isCompleted": true,
+    "dueDate": "2026-06-16",
+    "dateCreated": "2026-05-28T04:43:21.477Z"
+  },
+  {
+    "title": "Follow up with client",
+    "details": "Need to check the details before proceeding.",
+    "isCompleted": true,
+    "dueDate": null,
+    "dateCreated": "2026-01-27T06:06:48.477Z"
+  },
+  {
+    "title": "Optimize database queries",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-03-05",
+    "dateCreated": "2026-01-20T12:49:22.477Z"
+  },
+  {
+    "title": "Prepare quarterly report",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-04-10",
+    "dateCreated": "2026-01-10T13:36:10.477Z"
+  },
+  {
+    "title": "Send follow-up email after interview",
+    "details": null,
+    "isCompleted": false,
+    "dueDate": null,
+    "dateCreated": "2026-04-13T23:07:56.477Z"
+  },
+  {
+    "title": "Read a new book",
+    "details": "Low priority, can be done anytime.",
+    "isCompleted": true,
+    "dueDate": "2026-06-26",
+    "dateCreated": "2026-04-19T10:29:57.477Z"
+  },
+  {
+    "title": "Review budget",
+    "details": "Coordinate with team before starting.",
+    "isCompleted": false,
+    "dueDate": "2026-07-27",
+    "dateCreated": "2026-06-18T14:36:55.477Z"
+  },
+  {
+    "title": "Review flashcards #188",
+    "details": "Low priority, can be done anytime.",
+    "isCompleted": true,
+    "dueDate": "2025-12-12",
+    "dateCreated": "2025-12-23T13:31:35.477Z"
+  },
+  {
+    "title": "Compare insurance quotes",
+    "details": "Need to check the details before proceeding.",
+    "isCompleted": true,
+    "dueDate": "2026-05-11",
+    "dateCreated": "2026-03-24T09:38:58.477Z"
+  },
+  {
+    "title": "Take down decorations",
+    "details": "This is a recurring task, do not forget.",
+    "isCompleted": false,
+    "dueDate": "2026-06-01",
+    "dateCreated": "2026-04-19T11:14:01.477Z"
+  },
+  {
+    "title": "Change bed sheets",
+    "details": null,
+    "isCompleted": false,
+    "dueDate": "2026-03-21",
+    "dateCreated": "2026-03-31T23:05:36.477Z"
+  },
+  {
+    "title": "Change car oil",
+    "details": "Need to check the details before proceeding.",
+    "isCompleted": true,
+    "dueDate": "2026-01-07",
+    "dateCreated": "2026-01-24T04:46:56.477Z"
+  },
+  {
+    "title": "Watch a tutorial video",
+    "details": "High priority, needs attention soon.",
+    "isCompleted": true,
+    "dueDate": "2026-07-21",
+    "dateCreated": "2026-06-16T08:21:56.477Z"
+  },
+  {
+    "title": "Send holiday cards #194",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-06-04",
+    "dateCreated": "2026-05-12T05:34:11.477Z"
+  },
+  {
+    "title": "Meditate for 10 minutes",
+    "details": "Requires approval from manager first.",
+    "isCompleted": false,
+    "dueDate": null,
+    "dateCreated": "2026-06-17T10:07:21.477Z"
+  },
+  {
+    "title": "Draft client proposal",
+    "details": "Coordinate with team before starting.",
+    "isCompleted": false,
+    "dueDate": "2026-06-15",
+    "dateCreated": "2026-06-28T01:05:46.477Z"
+  },
+  {
+    "title": "Iron shirts",
+    "details": "Need to check the details before proceeding.",
+    "isCompleted": true,
+    "dueDate": "2026-06-06",
+    "dateCreated": "2026-06-17T08:58:47.477Z"
+  },
+  {
+    "title": "Attend webinar",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": null,
+    "dateCreated": "2026-04-25T07:19:59.477Z"
+  },
+  {
+    "title": "Descale coffee maker #199",
+    "details": null,
+    "isCompleted": false,
+    "dueDate": null,
+    "dateCreated": "2026-03-01T22:46:50.477Z"
+  },
+  {
+    "title": "Cancel unused subscription",
+    "details": "High priority, needs attention soon.",
+    "isCompleted": true,
+    "dueDate": "2026-05-01",
+    "dateCreated": "2026-03-19T19:54:47.477Z"
+  },
+  {
+    "title": "Deploy staging environment",
+    "details": "Low priority, can be done anytime.",
+    "isCompleted": false,
+    "dueDate": "2026-07-23",
+    "dateCreated": "2026-06-19T22:29:18.477Z"
+  },
+  {
+    "title": "Migrate to new server",
+    "details": "Need to check the details before proceeding.",
+    "isCompleted": true,
+    "dueDate": "2025-12-29",
+    "dateCreated": "2026-01-26T04:42:22.477Z"
+  },
+  {
+    "title": "Review pull request",
+    "details": null,
+    "isCompleted": false,
+    "dueDate": "2026-03-25",
+    "dateCreated": "2026-01-20T14:31:24.477Z"
+  },
+  {
+    "title": "Schedule car maintenance #204",
+    "details": "Ask for help if stuck.",
+    "isCompleted": true,
+    "dueDate": "2026-06-08",
+    "dateCreated": "2026-04-12T11:55:22.477Z"
+  },
+  {
+    "title": "Get haircut",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": null,
+    "dateCreated": "2026-06-03T01:38:03.477Z"
+  },
+  {
+    "title": "Practice guitar",
+    "details": "Low priority, can be done anytime.",
+    "isCompleted": true,
+    "dueDate": "2026-05-28",
+    "dateCreated": "2026-04-19T03:47:55.477Z"
+  },
+  {
+    "title": "Clean the garage",
+    "details": "This is a recurring task, do not forget.",
+    "isCompleted": true,
+    "dueDate": "2026-05-07",
+    "dateCreated": "2026-04-25T16:33:26.477Z"
+  },
+  {
+    "title": "Plan sprint retrospective",
+    "details": "Requires approval from manager first.",
+    "isCompleted": true,
+    "dueDate": "2025-12-22",
+    "dateCreated": "2025-12-29T04:13:13.477Z"
+  },
+  {
+    "title": "Track daily water intake",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-02-05",
+    "dateCreated": "2026-02-25T15:17:23.477Z"
+  },
+  {
+    "title": "Return library books",
+    "details": "Low priority, can be done anytime.",
+    "isCompleted": true,
+    "dueDate": "2026-06-20",
+    "dateCreated": "2026-06-11T06:21:30.477Z"
+  },
+  {
+    "title": "Buy anniversary gift",
+    "details": "Double check budget before committing.",
+    "isCompleted": true,
+    "dueDate": "2026-07-04",
+    "dateCreated": "2026-04-09T16:45:20.477Z"
+  },
+  {
+    "title": "Send holiday cards",
+    "details": null,
+    "isCompleted": false,
+    "dueDate": "2026-07-27",
+    "dateCreated": "2026-06-22T19:05:11.477Z"
+  },
+  {
+    "title": "Configure VPN",
+    "details": "Coordinate with team before starting.",
+    "isCompleted": true,
+    "dueDate": null,
+    "dateCreated": "2026-02-02T17:01:50.477Z"
+  },
+  {
+    "title": "Write onboarding documentation",
+    "details": "Follow up if no response within a week.",
+    "isCompleted": false,
+    "dueDate": "2026-07-16",
+    "dateCreated": "2026-06-29T12:42:40.477Z"
+  },
+  {
+    "title": "Set up CI pipeline",
+    "details": "Ask for help if stuck.",
+    "isCompleted": false,
+    "dueDate": "2026-04-06",
+    "dateCreated": "2026-04-05T06:51:04.477Z"
+  },
+  {
+    "title": "Schedule team meeting",
+    "details": "Double check budget before committing.",
+    "isCompleted": false,
+    "dueDate": null,
+    "dateCreated": "2026-02-24T21:50:52.477Z"
+  },
+  {
+    "title": "Take down decorations",
+    "details": "Follow up if no response within a week.",
+    "isCompleted": false,
+    "dueDate": null,
+    "dateCreated": "2026-04-25T11:00:34.477Z"
+  },
+  {
+    "title": "Clean out fridge",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-05-15",
+    "dateCreated": "2026-03-16T06:39:42.477Z"
+  },
+  {
+    "title": "Prepare conference talk",
+    "details": "High priority, needs attention soon.",
+    "isCompleted": true,
+    "dueDate": "2026-07-02",
+    "dateCreated": "2026-05-28T11:57:33.477Z"
+  },
+  {
+    "title": "Practice guitar",
+    "details": "This is a recurring task, do not forget.",
+    "isCompleted": true,
+    "dueDate": "2026-03-20",
+    "dateCreated": "2026-03-03T05:09:28.477Z"
+  },
+  {
+    "title": "Apply for new job #221",
+    "details": null,
+    "isCompleted": false,
+    "dueDate": "2026-08-15",
+    "dateCreated": "2026-06-15T07:02:12.477Z"
+  },
+  {
+    "title": "Review flashcards",
+    "details": "Requires approval from manager first.",
+    "isCompleted": true,
+    "dueDate": "2026-04-03",
+    "dateCreated": "2026-02-10T13:44:05.477Z"
+  },
+  {
+    "title": "Do laundry",
+    "details": "Low priority, can be done anytime.",
+    "isCompleted": false,
+    "dueDate": "2026-08-11",
+    "dateCreated": "2026-06-04T19:00:12.477Z"
+  },
+  {
+    "title": "Write thank you cards",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-06-13",
+    "dateCreated": "2026-06-22T23:26:03.477Z"
+  },
+  {
+    "title": "Review budget",
+    "details": "Ask for help if stuck.",
+    "isCompleted": true,
+    "dueDate": "2026-06-05",
+    "dateCreated": "2026-04-26T09:10:24.477Z"
+  },
+  {
+    "title": "Sell unused furniture",
+    "details": "Remember to bring necessary documents.",
+    "isCompleted": true,
+    "dueDate": "2026-04-14",
+    "dateCreated": "2026-03-01T12:09:28.477Z"
+  },
+  {
+    "title": "Follow up with client",
+    "details": "Follow up if no response within a week.",
+    "isCompleted": false,
+    "dueDate": null,
+    "dateCreated": "2026-06-27T15:20:25.477Z"
+  },
+  {
+    "title": "Rake the leaves",
+    "details": null,
+    "isCompleted": false,
+    "dueDate": "2026-03-15",
+    "dateCreated": "2026-02-10T19:47:35.477Z"
+  },
+  {
+    "title": "Network with colleagues",
+    "details": "High priority, needs attention soon.",
+    "isCompleted": true,
+    "dueDate": "2026-02-13",
+    "dateCreated": "2026-03-06T03:30:44.477Z"
+  },
+  {
+    "title": "Configure VPN",
+    "details": "Double check budget before committing.",
+    "isCompleted": false,
+    "dueDate": "2026-03-21",
+    "dateCreated": "2026-03-11T05:54:42.477Z"
+  },
+  {
+    "title": "Set up home office",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-05-15",
+    "dateCreated": "2026-04-10T13:32:12.477Z"
+  },
+  {
+    "title": "Set up home office",
+    "details": "Remember to bring necessary documents.",
+    "isCompleted": true,
+    "dueDate": null,
+    "dateCreated": "2026-04-30T09:16:16.477Z"
+  },
+  {
+    "title": "Optimize database queries",
+    "details": "Requires approval from manager first.",
+    "isCompleted": true,
+    "dueDate": "2026-07-06",
+    "dateCreated": "2026-05-05T06:22:34.477Z"
+  },
+  {
+    "title": "Configure VPN",
+    "details": "Ask for help if stuck.",
+    "isCompleted": false,
+    "dueDate": "2026-02-19",
+    "dateCreated": "2026-03-10T07:03:50.477Z"
+  },
+  {
+    "title": "Journal before bed",
+    "details": "This is a recurring task, do not forget.",
+    "isCompleted": true,
+    "dueDate": null,
+    "dateCreated": "2026-05-13T05:26:57.477Z"
+  },
+  {
+    "title": "Iron shirts",
+    "details": "Need to check the details before proceeding.",
+    "isCompleted": false,
+    "dueDate": "2026-08-12",
+    "dateCreated": "2026-06-10T13:25:16.477Z"
+  },
+  {
+    "title": "Change passwords",
+    "details": "Requires approval from manager first.",
+    "isCompleted": false,
+    "dueDate": "2026-08-02",
+    "dateCreated": "2026-06-23T21:50:33.477Z"
+  },
+  {
+    "title": "Optimize database queries",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-02-01",
+    "dateCreated": "2026-02-16T19:36:22.477Z"
+  },
+  {
+    "title": "Organize desk",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-04-07",
+    "dateCreated": "2026-04-12T04:59:11.477Z"
+  },
+  {
+    "title": "Audit security settings",
+    "details": "Need to check the details before proceeding.",
+    "isCompleted": false,
+    "dueDate": "2026-08-03",
+    "dateCreated": "2026-06-28T06:10:19.477Z"
+  },
+  {
+    "title": "Listen to a podcast episode #241",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-03-21",
+    "dateCreated": "2026-02-01T12:22:52.477Z"
+  },
+  {
+    "title": "Donate old clothes",
+    "details": "Ask for help if stuck.",
+    "isCompleted": true,
+    "dueDate": "2026-03-07",
+    "dateCreated": "2026-02-27T00:27:46.477Z"
+  },
+  {
+    "title": "Renew car insurance",
+    "details": null,
+    "isCompleted": false,
+    "dueDate": "2026-09-01",
+    "dateCreated": "2026-06-08T21:02:44.477Z"
+  },
+  {
+    "title": "Schedule team meeting",
+    "details": "High priority, needs attention soon.",
+    "isCompleted": true,
+    "dueDate": "2025-12-27",
+    "dateCreated": "2026-01-20T21:16:00.477Z"
+  },
+  {
+    "title": "Call mom",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-01-31",
+    "dateCreated": "2026-01-30T12:55:02.477Z"
+  },
+  {
+    "title": "Book flight tickets",
+    "details": "Double check budget before committing.",
+    "isCompleted": true,
+    "dueDate": "2026-04-14",
+    "dateCreated": "2026-04-18T12:47:03.477Z"
+  },
+  {
+    "title": "Iron shirts",
+    "details": null,
+    "isCompleted": true,
+    "dueDate": "2026-02-12",
+    "dateCreated": "2026-01-02T13:16:13.477Z"
+  },
+  {
+    "title": "Get haircut",
+    "details": "Low priority, can be done anytime.",
+    "isCompleted": true,
+    "dueDate": "2026-06-07",
+    "dateCreated": "2026-05-23T22:53:13.477Z"
+  },
+  {
+    "title": "Rake the leaves",
+    "details": "This is a recurring task, do not forget.",
+    "isCompleted": false,
+    "dueDate": "2026-08-02",
+    "dateCreated": "2026-05-04T21:58:42.477Z"
+  },
+  {
+    "title": "Donate old clothes",
+    "details": null,
+    "isCompleted": false,
+    "dueDate": "2026-06-25",
+    "dateCreated": "2026-05-15T06:45:16.477Z"
+  }
+]
