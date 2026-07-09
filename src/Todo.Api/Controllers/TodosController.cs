@@ -52,5 +52,15 @@ namespace Todo.Api.Controllers
 
             return CreatedAtAction(nameof(Create), new { id = todoItem.Id }, todoItem);
         }
+
+        [HttpDelete("{id:int}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var deleted = await _todoService.DeleteAsync(id);
+            if (!deleted)
+                return NotFound();
+
+            return NoContent();
+        }
     }
 }

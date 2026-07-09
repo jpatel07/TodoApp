@@ -96,5 +96,16 @@ namespace Todo.Infrastructure.Services
                 createdAt = todo.DateCreated
             };
         }
+
+        public async Task<bool> DeleteAsync(int id)
+        {
+            var todo = await _context.Todo.FindAsync(id);
+            if (todo is null)
+                return false;
+
+            _context.Todo.Remove(todo);
+            await _context.SaveChangesAsync();
+            return true;
+        }
     }
 }

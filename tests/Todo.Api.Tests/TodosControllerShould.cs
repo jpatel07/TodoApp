@@ -232,5 +232,32 @@ namespace Todo.Api.Tests
             // Assert
             Assert.Equal(HttpStatusCode.BadRequest, response.StatusCode);
         }
+
+        [Fact]
+        public async Task Delete_ReturnsNoContent_WhenItemExists()
+        {
+            // Arrange
+            var created = await CreateSeedItemAsync("Item to delete");
+
+            // Act
+            var response = await _client.DeleteAsync($"/todos/{created.Id}");
+
+            // Assert
+            Assert.Equal(HttpStatusCode.NoContent, response.StatusCode);
+
+            // Confirm it is no longer retrievable
+            var getResponse = await _client.GetAsync($"/todos/{created.Id}");
+            Assert.Equal(HttpStatusCode.NotFound, getResponse.StatusCode);
+        }
+
+        [Fact]
+        public async Task Delete_ReturnsNotFound_WhenItemDoesNotExist()
+        {
+            // Act
+            var response = await _client.DeleteAsync("/todos/999999");
+
+            // Assert
+            Assert.Equal(HttpStatusCode.NotFound, response.StatusCode);
+        }
     }
 }
