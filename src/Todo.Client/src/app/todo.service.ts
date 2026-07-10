@@ -1,6 +1,6 @@
 import { Injectable, signal } from '@angular/core';
 import { httpResource, HttpClient } from '@angular/common/http';
-import { TodoDTO, PagedResult, CreateTodoRequest } from './todo.model';
+import { TodoDTO, PagedResult, CreateTodoRequest, UpdateTodoRequest } from './todo.model';
 
 const API_BASE = 'http://localhost:5018/todos';
 
@@ -25,5 +25,9 @@ export class TodoService {
 
   getTodoById(id: number) {
     return this.http.get<TodoDTO>(`${API_BASE}/${id}`);
+  }
+
+  updateTodo(id: number, request: UpdateTodoRequest) {
+    return this.http.put(`${API_BASE}/${id}`, request);
   }
 }

@@ -4,6 +4,12 @@ export interface CreateTodoRequest {
   dueDate?: string | null;
 }
 
+export interface UpdateTodoRequest {
+  title: string;
+  description?: string | null;
+  dueDate?: string | null;
+}
+
 export interface TodoDTO {
   id: number;
   title: string;

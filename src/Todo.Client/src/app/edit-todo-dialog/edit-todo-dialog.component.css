@@ -1,0 +1,47 @@
+.full-width {
+  width: 100%;
+}
+
+mat-dialog-content {
+  overflow: visible !important;
+  padding-top: 8px !important;
+}
+
+mat-form-field {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 24px 0;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.error-text {
+  color: #b71c1c;
+}
+
+.api-error-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 0 24px 4px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  background: #fdecea;
+  color: #b71c1c;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.api-error-banner mat-icon {
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}

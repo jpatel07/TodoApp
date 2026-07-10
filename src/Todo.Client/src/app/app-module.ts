@@ -19,9 +19,10 @@ import { AppRoutingModule } from './app-routing-module';
 import { App } from './app.component';
 import { CreateTodoDialogComponent } from './create-todo-dialog/create-todo-dialog.component';
 import { ViewTodoDialogComponent } from './view-todo-dialog/view-todo-dialog.component';
+import { EditTodoDialogComponent } from './edit-todo-dialog/edit-todo-dialog.component';
 
 @NgModule({
-  declarations: [App, CreateTodoDialogComponent, ViewTodoDialogComponent],
+  declarations: [App, CreateTodoDialogComponent, ViewTodoDialogComponent, EditTodoDialogComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
