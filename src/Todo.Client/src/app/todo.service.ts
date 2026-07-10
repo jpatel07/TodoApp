@@ -35,4 +35,8 @@ export class TodoService {
     const action = isCompleted ? 'complete' : 'incomplete';
     return this.http.patch(`${API_BASE}/${id}/${action}`, {});
   }
+
+  deleteTodo(id: number) {
+    return this.http.delete(`${API_BASE}/${id}`);
+  }
 }

@@ -20,9 +20,10 @@ import { App } from './app.component';
 import { CreateTodoDialogComponent } from './create-todo-dialog/create-todo-dialog.component';
 import { ViewTodoDialogComponent } from './view-todo-dialog/view-todo-dialog.component';
 import { EditTodoDialogComponent } from './edit-todo-dialog/edit-todo-dialog.component';
+import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
 
 @NgModule({
-  declarations: [App, CreateTodoDialogComponent, ViewTodoDialogComponent, EditTodoDialogComponent],
+  declarations: [App, CreateTodoDialogComponent, ViewTodoDialogComponent, EditTodoDialogComponent, ConfirmDialogComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

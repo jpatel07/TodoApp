@@ -80,6 +80,13 @@
                 <button mat-icon-button (click)="openEditDialog(row.id)" matTooltip="Edit">
                   <mat-icon>edit</mat-icon>
                 </button>
+                @if (deletingIds().has(row.id)) {
+                  <mat-spinner diameter="20" style="display:inline-block;vertical-align:middle" />
+                } @else {
+                  <button mat-icon-button color="warn" (click)="confirmDelete(row.id)" matTooltip="Delete">
+                    <mat-icon>delete</mat-icon>
+                  </button>
+                }
               </td>
             </ng-container>
 

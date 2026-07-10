@@ -5,6 +5,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { CreateTodoDialogComponent } from './create-todo-dialog/create-todo-dialog.component';
 import { ViewTodoDialogComponent } from './view-todo-dialog/view-todo-dialog.component';
 import { EditTodoDialogComponent } from './edit-todo-dialog/edit-todo-dialog.component';
+import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
 
 @Component({
   selector: 'app-root',
@@ -20,6 +21,9 @@ export class App {
 
   /** Tracks which row IDs are currently being toggled */
   readonly togglingIds = signal<Set<number>>(new Set());
+
+  /** Tracks which row IDs are currently being deleted */
+  readonly deletingIds = signal<Set<number>>(new Set());
 
   onPageChange(event: PageEvent): void {
     this.todoService.pageNumber.set(event.pageIndex + 1);
@@ -58,6 +62,23 @@ export class App {
       error: () => {
         this.togglingIds.update(s => { const n = new Set(s); n.delete(id); return n; });
       },
+    });
+  }
+
+  confirmDelete(id: number): void {
+    const ref = this.dialog.open(ConfirmDialogComponent, { width: '380px' });
+    ref.afterClosed().subscribe((confirmed: boolean) => {
+      if (!confirmed) return;
+      this.deletingIds.update(s => new Set(s).add(id));
+      this.todoService.deleteTodo(id).subscribe({
+        next: () => {
+          this.deletingIds.update(s => { const n = new Set(s); n.delete(id); return n; });
+          this.todoService.todosPage.reload();
+        },
+        error: () => {
+          this.deletingIds.update(s => { const n = new Set(s); n.delete(id); return n; });
+        },
+      });
     });
   }
 }
