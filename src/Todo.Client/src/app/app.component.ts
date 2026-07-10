@@ -3,6 +3,7 @@ import { TodoService } from './todo.service';
 import { PageEvent } from '@angular/material/paginator';
 import { MatDialog } from '@angular/material/dialog';
 import { CreateTodoDialogComponent } from './create-todo-dialog/create-todo-dialog.component';
+import { ViewTodoDialogComponent } from './view-todo-dialog/view-todo-dialog.component';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +15,7 @@ export class App {
   protected readonly todoService = inject(TodoService);
   private readonly dialog = inject(MatDialog);
 
-  readonly displayedColumns = ['id', 'title', 'dueDate', 'isCompleted'];
+  readonly displayedColumns = ['id', 'title', 'dueDate', 'isCompleted', 'actions'];
 
   onPageChange(event: PageEvent): void {
     this.todoService.pageNumber.set(event.pageIndex + 1);
@@ -28,5 +29,9 @@ export class App {
         this.todoService.todosPage.reload();
       }
     });
+  }
+
+  openViewDialog(id: number): void {
+    this.dialog.open(ViewTodoDialogComponent, { width: '440px', data: id });
   }
 }

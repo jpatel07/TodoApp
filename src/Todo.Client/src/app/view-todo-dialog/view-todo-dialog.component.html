@@ -1,0 +1,46 @@
+<h2 mat-dialog-title>To-Do Details</h2>
+
+<mat-dialog-content>
+
+  @if (loading()) {
+    <div class="center">
+      <mat-spinner diameter="36" />
+    </div>
+  } @else if (error()) {
+    <div class="center error-text">
+      <mat-icon>error_outline</mat-icon>
+      <span>Could not load the item. Please try again.</span>
+    </div>
+  } @else {
+    <dl class="detail-list">
+      <dt>ID</dt>
+      <dd>{{ todo()!.id }}</dd>
+
+      <dt>Title</dt>
+      <dd>{{ todo()!.title }}</dd>
+
+      <dt>Description</dt>
+      <dd>{{ todo()!.description || '—' }}</dd>
+
+      <dt>Due Date</dt>
+      <dd>{{ todo()!.dueDate ? (todo()!.dueDate | date:'mediumDate') : '—' }}</dd>
+
+      <dt>Created At</dt>
+      <dd>{{ todo()!.createdAt | date:'medium' }}</dd>
+
+      <dt>Status</dt>
+      <dd>
+        @if (todo()!.isCompleted) {
+          <mat-chip class="chip-done">Done</mat-chip>
+        } @else {
+          <mat-chip class="chip-pending">Pending</mat-chip>
+        }
+      </dd>
+    </dl>
+  }
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-flat-button (click)="close()">Close</button>
+</mat-dialog-actions>

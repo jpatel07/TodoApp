@@ -7,8 +7,10 @@ export interface CreateTodoRequest {
 export interface TodoDTO {
   id: number;
   title: string;
+  description: string | null;
   dueDate: string | null;
   isCompleted: boolean;
+  createdAt: string;
 }
 
 export interface PagedResult<T> {

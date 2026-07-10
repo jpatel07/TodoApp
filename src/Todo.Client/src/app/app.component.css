@@ -112,10 +112,11 @@ tr.mat-mdc-row:hover td {
 }
 
 /* Column sizing */
-.col-id     { width: 60px;  }
-.col-title  { width: auto;  }
-.col-date   { width: 140px; white-space: nowrap; }
-.col-status { width: 110px; }
+.col-id      { width: 60px;  }
+.col-title   { width: auto;  }
+.col-date    { width: 140px; white-space: nowrap; }
+.col-status  { width: 110px; }
+.col-actions { width: 56px;  text-align: center; }
 
 /* ── Status chips ───────────────────────────────────────── */
 .chip-done {
