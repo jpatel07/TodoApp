@@ -40,9 +40,12 @@ namespace Todo.Api
             if (app.Environment.IsDevelopment())
             {
                 app.MapOpenApi();
+                app.UseHttpsRedirection();
             }
 
-            app.UseHttpsRedirection();
+            // Serve the bundled Angular client from wwwroot.
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
 
             app.UseCors("AllowAngularClient");
 
@@ -50,6 +53,9 @@ namespace Todo.Api
 
 
             app.MapControllers();
+
+            // Fall back to the Angular entry point for client-side routes.
+            app.MapFallbackToFile("index.html");
 
             try
             {

@@ -72,7 +72,8 @@
           },
           "defaultConfiguration": "development",
           "options": {
-            "port": 54915
+            "port": 54915,
+            "proxyConfig": "proxy.conf.json"
           }
         },
         "test": {

@@ -2,7 +2,7 @@ import { Injectable, signal } from '@angular/core';
 import { httpResource, HttpClient } from '@angular/common/http';
 import { TodoDTO, PagedResult, CreateTodoRequest, UpdateTodoRequest } from './todo.model';
 
-const API_BASE = 'http://localhost:5018/todos';
+const API_BASE = '/todos';
 
 @Injectable({ providedIn: 'root' })
 export class TodoService {
