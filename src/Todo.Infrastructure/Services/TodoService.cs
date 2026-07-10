@@ -35,7 +35,7 @@ namespace Todo.Infrastructure.Services
             var totalCount = await _context.Todo.CountAsync();
 
             var items = await _context.Todo
-                .OrderBy(t => t.DueDate)
+                .OrderBy(t => t.Id)
                 .ThenBy(t => t.Id)
                 .Skip((pageNumber - 1) * pageSize)
                 .Take(pageSize)
