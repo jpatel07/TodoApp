@@ -1,17 +1,11 @@
-# Copy .env.example to .env and set MSSQL_SA_PASSWORD before running.
-x-mssql-password: &mssql-password ${MSSQL_SA_PASSWORD:?MSSQL_SA_PASSWORD is not set. Copy .env.example to .env and fill in a value.}
-
 services:
   sqlserver:
     image: mcr.microsoft.com/mssql/server:2022-latest
     container_name: todo-sqlserver
-    env_file:
-      - path: .env
-        required: true
     environment:
       ACCEPT_EULA: "Y"
       MSSQL_PID: "Developer"
-      MSSQL_SA_PASSWORD: *mssql-password
+      MSSQL_SA_PASSWORD: "${MSSQL_SA_PASSWORD}"
     ports:
       - "1433:1433"
     volumes:
