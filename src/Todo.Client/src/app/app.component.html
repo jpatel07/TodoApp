@@ -9,6 +9,10 @@
       <h2>Todo List</h2>
       <span>{{ todoService.todosPage.value()?.totalCount ?? 0 }} items total</span>
     </div>
+    <span class="toolbar-spacer"></span>
+    <button mat-flat-button color="primary" (click)="openCreateDialog()">
+      <mat-icon>add</mat-icon> New Todo
+    </button>
   </div>
 
   <!-- Card fills all remaining vertical space -->

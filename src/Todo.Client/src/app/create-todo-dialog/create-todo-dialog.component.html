@@ -1,0 +1,38 @@
+<h2 mat-dialog-title>New To-Do</h2>
+
+<mat-dialog-content>
+  <form [formGroup]="form" id="createTodoForm" (ngSubmit)="submit()">
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Title</mat-label>
+      <input matInput formControlName="title" placeholder="e.g. Buy groceries" />
+      @if (form.controls.title.hasError('required')) {
+        <mat-error>Title is required</mat-error>
+      }
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Description</mat-label>
+      <textarea matInput formControlName="description" cdkTextareaAutosize
+                cdkAutosizeMinRows="3" cdkAutosizeMaxRows="6"
+                placeholder="Optional description"></textarea>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Due Date</mat-label>
+      <input matInput type="date" formControlName="dueDate" [min]="today" />
+      @if (form.controls.dueDate.hasError('pastDate')) {
+        <mat-error>Due date must be today or in the future</mat-error>
+      }
+    </mat-form-field>
+
+  </form>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button type="button" (click)="cancel()">Cancel</button>
+  <button mat-flat-button color="primary" type="submit" form="createTodoForm"
+          [disabled]="form.invalid || submitting">
+    {{ submitting ? 'Saving…' : 'Create' }}
+  </button>
+</mat-dialog-actions>

@@ -1,6 +1,6 @@
 import { Injectable, signal } from '@angular/core';
-import { httpResource } from '@angular/common/http';
-import { TodoDTO, PagedResult } from './todo.model';
+import { httpResource, HttpClient } from '@angular/common/http';
+import { TodoDTO, PagedResult, CreateTodoRequest } from './todo.model';
 
 const API_BASE = 'http://localhost:5018/todos';
 
@@ -16,4 +16,10 @@ export class TodoService {
       pageSize: this.pageSize(),
     },
   }));
+
+  constructor(private http: HttpClient) {}
+
+  createTodo(request: CreateTodoRequest) {
+    return this.http.post(API_BASE, request);
+  }
 }

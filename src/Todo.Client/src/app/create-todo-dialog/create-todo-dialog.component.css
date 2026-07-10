@@ -1,0 +1,15 @@
+.full-width {
+  width: 100%;
+}
+
+/* Ensure mat-dialog-content doesn't clip the outline labels or resize handles */
+mat-dialog-content {
+  overflow: visible !important;
+  padding-top: 8px !important;
+}
+
+/* Give each field a little breathing room */
+mat-form-field {
+  display: block;
+  margin-bottom: 8px;
+}
