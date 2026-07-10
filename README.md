@@ -1,28 +1,58 @@
 # TodoApp
 
-Clone the repo and navigate into it.
+## Clone the repo
 
-    git clone <repo-url>
-    cd TodoApp
+```bash
+git clone <repo-url>
+cd TodoApp
+```
 
-## Option 1 - Docker
+---
 
-    docker-compose up -d
+## Option 1 — Run everything with Docker
 
-App runs at http://localhost:8080.
+Starts SQL Server and the API together.
 
-## Option 2 - Manual
+```bash
+docker-compose up -d
+```
 
-Requires .NET 10 SDK and Node.js with Angular CLI installed (`npm install -g @angular/cli`).
+App will be available at `http://localhost:8080`.
 
-Start SQL Server, then in separate terminals run the API and the client.
+---
 
-    docker-compose up -d sqlserver
+## Option 2 — Run manually
 
-    dotnet test --project .\src\Todo.Api\Todo.Api.csproj #to run integration tests
-    dotnet run --project .\src\Todo.Api\Todo.Api.csproj
+### Prerequisites
+- [.NET 10 SDK](https://dotnet.microsoft.com/download)
+- [Node.js](https://nodejs.org) + Angular CLI (`npm install -g @angular/cli`)
+- Docker (for SQL Server)
 
-    cd src\Todo.Client
-    ng serve
+### 1. Start SQL Server
 
-Client runs at http://localhost:54915.
+```bash
+docker-compose up -d sqlserver
+```
+
+### 2. Run the tests
+
+```bash
+dotnet test --project .\src\Todo.Api\Todo.Api.csproj
+```
+
+### 3. Run the API
+
+```bash
+dotnet run --project .\src\Todo.Api\Todo.Api.csproj
+```
+
+### 4. Run the Angular client
+
+In a separate terminal:
+
+```bash
+cd src\Todo.Client
+ng serve
+```
+
+Client will be available at `http://localhost:54915/`.
