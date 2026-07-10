@@ -13,11 +13,13 @@ App runs at http://localhost:8080.
 
 ## Option 2 - Manual
 
+Requires .NET 10 SDK and Node.js with Angular CLI installed (`npm install -g @angular/cli`).
+
 Start SQL Server, then in separate terminals run the API and the client.
 
     docker-compose up -d sqlserver
 
-    dotnet test --project .\src\Todo.Api\Todo.Api.csproj
+    dotnet test --project .\src\Todo.Api\Todo.Api.csproj #to run integration tests
     dotnet run --project .\src\Todo.Api\Todo.Api.csproj
 
     cd src\Todo.Client
