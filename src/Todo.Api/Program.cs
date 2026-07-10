@@ -14,6 +14,14 @@ namespace Todo.Api
 
             // Add services to the container.
 
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAngularClient", policy =>
+                    policy.WithOrigins("http://localhost:54915")
+                          .AllowAnyHeader()
+                          .AllowAnyMethod());
+            });
+
             builder.Services.AddControllers();
 
             builder.Services.AddDbContext<TodoContext>(options =>
@@ -35,6 +43,8 @@ namespace Todo.Api
             }
 
             app.UseHttpsRedirection();
+
+            app.UseCors("AllowAngularClient");
 
             app.UseAuthorization();
 
