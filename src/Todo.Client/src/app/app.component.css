@@ -133,6 +133,13 @@ tr.mat-mdc-row:hover td {
   font-weight: 500 !important;
 }
 
+.chip-clickable {
+  cursor: pointer !important;
+}
+.chip-clickable:hover {
+  filter: brightness(0.95);
+}
+
 /* ── Paginator pinned to bottom ─────────────────────────── */
 mat-paginator {
   flex-shrink: 0;

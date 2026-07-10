@@ -30,4 +30,9 @@ export class TodoService {
   updateTodo(id: number, request: UpdateTodoRequest) {
     return this.http.put(`${API_BASE}/${id}`, request);
   }
+
+  setCompleted(id: number, isCompleted: boolean) {
+    const action = isCompleted ? 'complete' : 'incomplete';
+    return this.http.patch(`${API_BASE}/${id}/${action}`, {});
+  }
 }

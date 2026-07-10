@@ -53,10 +53,20 @@
             <ng-container matColumnDef="isCompleted">
               <th mat-header-cell *matHeaderCellDef class="col-status">Status</th>
               <td mat-cell *matCellDef="let row" class="col-status">
-                @if (row.isCompleted) {
-                  <mat-chip class="chip-done">Done</mat-chip>
+                @if (togglingIds().has(row.id)) {
+                  <mat-spinner diameter="20" />
+                } @else if (row.isCompleted) {
+                  <mat-chip class="chip-done chip-clickable"
+                            (click)="toggleCompleted(row.id, row.isCompleted)"
+                            matTooltip="Mark as incomplete">
+                    Done
+                  </mat-chip>
                 } @else {
-                  <mat-chip class="chip-pending">Pending</mat-chip>
+                  <mat-chip class="chip-pending chip-clickable"
+                            (click)="toggleCompleted(row.id, row.isCompleted)"
+                            matTooltip="Mark as complete">
+                    Pending
+                  </mat-chip>
                 }
               </td>
             </ng-container>

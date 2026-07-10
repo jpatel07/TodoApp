@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { TodoService } from './todo.service';
 import { PageEvent } from '@angular/material/paginator';
 import { MatDialog } from '@angular/material/dialog';
@@ -17,6 +17,9 @@ export class App {
   private readonly dialog = inject(MatDialog);
 
   readonly displayedColumns = ['id', 'title', 'dueDate', 'isCompleted', 'actions'];
+
+  /** Tracks which row IDs are currently being toggled */
+  readonly togglingIds = signal<Set<number>>(new Set());
 
   onPageChange(event: PageEvent): void {
     this.todoService.pageNumber.set(event.pageIndex + 1);
@@ -42,6 +45,19 @@ export class App {
       if (updated) {
         this.todoService.todosPage.reload();
       }
+    });
+  }
+
+  toggleCompleted(id: number, currentValue: boolean): void {
+    this.togglingIds.update(s => new Set(s).add(id));
+    this.todoService.setCompleted(id, !currentValue).subscribe({
+      next: () => {
+        this.togglingIds.update(s => { const n = new Set(s); n.delete(id); return n; });
+        this.todoService.todosPage.reload();
+      },
+      error: () => {
+        this.togglingIds.update(s => { const n = new Set(s); n.delete(id); return n; });
+      },
     });
   }
 }
