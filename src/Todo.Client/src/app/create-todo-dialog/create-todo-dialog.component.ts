@@ -1,6 +1,7 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { AbstractControl, FormBuilder, ValidationErrors, Validators } from '@angular/forms';
 import { MatDialogRef } from '@angular/material/dialog';
+import { HttpErrorResponse } from '@angular/common/http';
 import { TodoService } from '../todo.service';
 
 function futureDateValidator(control: AbstractControl): ValidationErrors | null {
@@ -30,11 +31,13 @@ export class CreateTodoDialogComponent {
     dueDate: ['', [futureDateValidator]],
   });
 
-  submitting = false;
+  readonly submitting = signal(false);
+  readonly apiError = signal<string | null>(null);
 
   submit(): void {
     if (this.form.invalid) return;
-    this.submitting = true;
+    this.submitting.set(true);
+    this.apiError.set(null);
     const { title, description, dueDate } = this.form.getRawValue();
     this.todoService.createTodo({
       title: title!,
@@ -42,13 +45,34 @@ export class CreateTodoDialogComponent {
       dueDate: dueDate || null,
     }).subscribe({
       next: () => {
-        this.submitting = false;
+        this.submitting.set(false);
         this.dialogRef.close(true);
       },
-      error: () => {
-        this.submitting = false;
+      error: (err: HttpErrorResponse) => {
+        this.submitting.set(false);
+        if (err.status >= 400 && err.status < 500) {
+          this.apiError.set(this.extractMessage(err));
+        } else {
+          this.apiError.set('An unexpected error occurred. Please try again.');
+        }
       },
     });
+  }
+
+  private extractMessage(err: HttpErrorResponse): string {
+    const body = err.error;
+    if (typeof body === 'string' && body.trim()) return body.trim();
+    if (body && typeof body === 'object') {
+      if (typeof body.detail === 'string' && body.detail.trim()) return body.detail.trim();
+      if (typeof body.title === 'string' && body.title.trim()) return body.title.trim();
+      if (typeof body.message === 'string' && body.message.trim()) return body.message.trim();
+      const errors = body.errors;
+      if (errors && typeof errors === 'object') {
+        const messages = Object.values(errors).flat() as string[];
+        if (messages.length) return messages.join(' ');
+      }
+    }
+    return `Request failed with status ${err.status}.`;
   }
 
   cancel(): void {
