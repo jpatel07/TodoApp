@@ -62,5 +62,25 @@ namespace Todo.Api.Controllers
 
             return NoContent();
         }
+
+        [HttpPatch("{id:int}/complete")]
+        public async Task<IActionResult> Complete(int id)
+        {
+            var result = await _todoService.SetCompletedAsync(id, true);
+            if (result is null)
+                return NotFound();
+
+            return Ok(result);
+        }
+
+        [HttpPatch("{id:int}/incomplete")]
+        public async Task<IActionResult> Incomplete(int id)
+        {
+            var result = await _todoService.SetCompletedAsync(id, false);
+            if (result is null)
+                return NotFound();
+
+            return Ok(result);
+        }
     }
 }
