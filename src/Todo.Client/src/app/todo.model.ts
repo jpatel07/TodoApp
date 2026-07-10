@@ -4,3 +4,11 @@ export interface TodoDTO {
   dueDate: string | null;
   isCompleted: boolean;
 }
+
+export interface PagedResult<T> {
+  items: T[];
+  pageNumber: number;
+  pageSize: number;
+  totalCount: number;
+  totalPages: number;
+}

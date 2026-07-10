@@ -1,9 +1,80 @@
-<h2>Todo Items</h2>
+<div class="page-container">
 
-@if (todoService.todos.isLoading()) {
-  <p>Loading...</p>
-} @else if (todoService.todos.error()) {
-  <p>Error: {{ todoService.todos.error() }}</p>
-} @else {
-  <pre>{{ todoService.todos.value() | json }}</pre>
-}
+  <!-- Toolbar above the card -->
+  <div class="toolbar">
+    <div class="header-icon">
+      <mat-icon>checklist</mat-icon>
+    </div>
+    <div class="header-text">
+      <h2>Todo List</h2>
+      <span>{{ todoService.todosPage.value()?.totalCount ?? 0 }} items total</span>
+    </div>
+  </div>
+
+  <!-- Card fills all remaining vertical space -->
+  <mat-card class="todo-card">
+    <mat-card-content>
+
+      @if (todoService.todosPage.isLoading()) {
+        <div class="spinner-container">
+          <mat-spinner diameter="40" />
+        </div>
+      } @else if (todoService.todosPage.error()) {
+        <div class="error-container">
+          <mat-icon color="warn">error_outline</mat-icon>
+          <span>Failed to load todos. Please try again.</span>
+        </div>
+      } @else {
+
+        <div class="table-wrapper">
+          <table mat-table [dataSource]="todoService.todosPage.value()?.items ?? []">
+
+            <ng-container matColumnDef="id">
+              <th mat-header-cell *matHeaderCellDef class="col-id">#</th>
+              <td mat-cell *matCellDef="let row" class="col-id">{{ row.id }}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="title">
+              <th mat-header-cell *matHeaderCellDef class="col-title">Title</th>
+              <td mat-cell *matCellDef="let row" class="col-title">{{ row.title }}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="dueDate">
+              <th mat-header-cell *matHeaderCellDef class="col-date">Due Date</th>
+              <td mat-cell *matCellDef="let row" class="col-date">
+                {{ row.dueDate ? (row.dueDate | date:'mediumDate') : '\u2014' }}
+              </td>
+            </ng-container>
+
+            <ng-container matColumnDef="isCompleted">
+              <th mat-header-cell *matHeaderCellDef class="col-status">Status</th>
+              <td mat-cell *matCellDef="let row" class="col-status">
+                @if (row.isCompleted) {
+                  <mat-chip class="chip-done">Done</mat-chip>
+                } @else {
+                  <mat-chip class="chip-pending">Pending</mat-chip>
+                }
+              </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+          </table>
+        </div>
+
+        <mat-paginator
+          [length]="todoService.todosPage.value()?.totalCount ?? 0"
+          [pageIndex]="todoService.pageNumber() - 1"
+          [pageSize]="todoService.pageSize()"
+          [pageSizeOptions]="[5, 10, 25]"
+          showFirstLastButtons
+          (page)="onPageChange($event)">
+        </mat-paginator>
+
+      }
+
+    </mat-card-content>
+  </mat-card>
+
+</div>

@@ -1,0 +1,174 @@
+/* ── Full-viewport shell ───────────────────────────────── */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 24px;
+  gap: 0;
+}
+
+/* ── Top toolbar ───────────────────────────────────────── */
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 0 0 20px;
+  flex-shrink: 0;
+}
+
+.header-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #6750a4, #9c7ddb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.header-text h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.header-text span {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+/* ── Card fills remaining height ────────────────────────── */
+.todo-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 16px !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07) !important;
+}
+
+.todo-card mat-card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0 !important;
+}
+
+/* ── Table area scrolls, paginator stays pinned ─────────── */
+.table-wrapper {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+table.mat-mdc-table {
+  width: 100%;
+  min-width: 480px;
+  border-collapse: collapse;
+}
+
+/* Sticky header row */
+th.mat-mdc-header-cell {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: rgba(0, 0, 0, 0.4);
+  padding: 0 20px;
+  height: 44px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+td.mat-mdc-cell {
+  padding: 0 20px;
+  height: 52px;
+  font-size: 14px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+tr.mat-mdc-row {
+  transition: background 0.12s ease;
+}
+
+tr.mat-mdc-row:last-child td {
+  border-bottom: none;
+}
+
+tr.mat-mdc-row:hover td {
+  background: rgba(103, 80, 164, 0.04);
+}
+
+/* Column sizing */
+.col-id     { width: 60px;  }
+.col-title  { width: auto;  }
+.col-date   { width: 140px; white-space: nowrap; }
+.col-status { width: 110px; }
+
+/* ── Status chips ───────────────────────────────────────── */
+.chip-done {
+  --mdc-chip-label-text-color: #2e7d32 !important;
+  --mdc-chip-elevated-container-color: #e8f5e9 !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+}
+
+.chip-pending {
+  --mdc-chip-label-text-color: #b45309 !important;
+  --mdc-chip-elevated-container-color: #fef9c3 !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+}
+
+/* ── Paginator pinned to bottom ─────────────────────────── */
+mat-paginator {
+  flex-shrink: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.07);
+  font-size: 13px;
+}
+
+/* ── Spinner / Error ────────────────────────────────────── */
+.spinner-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #b00020;
+  font-size: 14px;
+}
+mat-paginator {
+  border-top: 1px solid rgba(0, 0, 0, 0.07);
+  font-size: 13px;
+}
+
+/* ── Spinner / Error ──────────────────────────────────── */
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  padding: 56px 0;
+}
+
+.error-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 32px 24px;
+  color: #b00020;
+  font-size: 14px;
+}
